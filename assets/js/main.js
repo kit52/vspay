@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
         });
+        console.log(window.innerWidth)
         // const sliderPagination = document.querySelector('.steps-section .swiper-pagination')
         // if (swiper.isLocked) {
         //     sliderPagination.classList.add('hide')
