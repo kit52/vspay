@@ -1,6 +1,6 @@
 
 // import Accordion from 'accordion-js'
-import 'swiper/css/bundle'
+
 import Swiper, { Pagination } from "swiper";
 
 
