@@ -22,7 +22,9 @@
         padding: 40px;
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         @media (min-width: 768px) {
+            align-items: unset;
             padding: 45px;
             flex-direction: unset;
         }
@@ -90,15 +92,26 @@
     }
     p {
         margin: 0;
+        font-style: normal;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 16px;
+        line-height: 19px;
         text-align: center;
         color: #ffffff;
         @media (min-width: 768px) {
             font-size: 16px;
             line-height: 19px;
             text-align: start;
+        }
+    }
+    ul {
+        padding-left: 16px;
+        li {
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
         }
     }
     .payment-service-section__text {
@@ -109,22 +122,28 @@
     }
     &__right {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 116px);
+        grid-template-rows: repeat(3, 80px);
         grid-gap: 8px;
-        width: 100%;
-
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
         @media (min-width: 768px) {
+            justify-content: right;
             grid-gap: 10px;
             margin-left: 30px;
+        }
+        @media (min-width: 850px) {
+            grid-template-columns: repeat(2, 160px);
+            grid-template-rows: repeat(3, 110px);
         }
         @media (min-width: 992px) {
             margin-left: 80px;
         }
         @media (min-width: 1200px) {
+            margin-left: 80px;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            margin-left: 80px;
         }
 
         .card.hidden {
@@ -139,22 +158,33 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         margin-top: 24px;
         @media (min-width: 768px) {
             display: block;
             margin-top: 0px;
-            max-width: 332px;
         }
     }
     .card {
-        background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 100%);
+        background-image: url("../img/background.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: border-box;
         border-radius: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 116px;
+        height: 80px;
+        @media (min-width: 850px) {
+            width: 160px;
+            height: 110px;
+        }
+
         img {
-            margin: 30px 5px;
-            @media (min-width: 768px) {
+            max-width: 80px;
+            @media (min-width: 850px) {
+                max-width: unset;
                 margin: 15px;
             }
         }

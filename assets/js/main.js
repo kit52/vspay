@@ -1,5 +1,5 @@
 
-// import Accordion from 'accordion-js'
+import Accordion from 'accordion-js'
 
 import Swiper, { Pagination } from "swiper";
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const videos = document.querySelectorAll('.video');
         videos.forEach((v) => {
             const videoId = v.getAttribute('data-video');
-            v.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/maxresdefault.jpg)`;
+
             v.addEventListener('click', () => {
                 v.innerHTML = '<iframe src="//www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1" scrolling="no" style="width: 100%; height: 100%;" allow="autoplay"></iframe>';
                 v.classList.add("active");
@@ -69,14 +69,36 @@ document.addEventListener("DOMContentLoaded", () => {
         // }
         console.log(swiper);
     }
-
-
-    // function accordionsInit() {
-    //     const accordions = [...document.querySelectorAll('.accordion-container')]
-    //     new Accordion(accordions)
-    // }
-    // const accordion = document.querySelector('.accordion-container')
-    // if (accordion) {
-    //     accordionsInit()
-    // }
+    if (document.querySelector('.dropdown')) {
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        })
+    }
+    if (document.querySelector('.news-section__rows-tiles-wrapper')) {
+        const wrapperControl = document.querySelector('.news-section__rows-tiles-wrapper');
+        const wrapperContent = document.querySelector('.news-section__wrapper')
+        const rowsControl = wrapperControl.querySelector('.rows');
+        const tilesControl = wrapperControl.querySelector('.tiles');
+        wrapperControl.addEventListener('click', (e) => {
+            if (e.target.closest('.rows')) {
+                console.log("rows");
+                tilesControl.classList.remove('selected')
+                rowsControl.classList.add('selected')
+                wrapperContent.classList.remove('tile')
+            } else if (e.target.closest('.tiles')) {
+                rowsControl.classList.remove('selected')
+                tilesControl.classList.add('selected')
+                wrapperContent.classList.add('tile')
+            }
+        })
+    }
+    function accordionsInit() {
+        const accordions = [...document.querySelectorAll('.accordion-container')]
+        new Accordion(accordions)
+    }
+    const accordion = document.querySelector('.accordion-container')
+    if (accordion) {
+        accordionsInit()
+    }
 });

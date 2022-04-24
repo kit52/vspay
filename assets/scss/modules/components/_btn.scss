@@ -8,17 +8,14 @@
     align-items: center;
     width: 100%;
     padding: 20px 30px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
     transition: fill 0.5s ease, color 0.5s ease, background 0.5s ease;
-    @media (min-width: 992px) {
-        font-size: 12px;
-        line-height: 15px;
-    }
+
     span {
         color: inherit;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
     }
     svg {
         fill: inherit;
@@ -72,5 +69,10 @@
         color: #fff;
         fill: #fff;
         padding: 0;
+    }
+    &_outline-white {
+        border: 1px solid #fff;
+        color: #fff;
+        fill: #fff;
     }
 }
