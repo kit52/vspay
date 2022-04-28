@@ -2,696 +2,576 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-    <title>VessPay</title>
+<title>VessPay</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./../assets/css/style.css"> 
 
-</head>
+  </head>
 
 <body>
 
+  
+<header class="header header-desctop">
+    <div class="container">
+        <a class="header__logo" href="/">
+            <img src="./assets/img/logo.svg" alt="logo">
+        </a>
+        <div class="header__menu">
+            <ul>
+                
 
-    <header class="header header-desctop">
-        <div class="container">
-            <a class="header__logo" href="/">
-                <img src="./assets/img/logo.svg" alt="logo">
-            </a>
-            <div class="header__menu">
-                <ul>
+                
+                <li class="header__menu-item "><a href="./ru/payment-services">Оплата сервисов</a>
+                </li>
+                
+                
 
+                
+                <li class="header__menu-item "><a href="./ru/about-company">О компании</a>
+                </li>
+                
+                
 
-
-                    <li class="header__menu-item "><a href="./payment-services">Payment services</a>
-                    </li>
-
-
-
-
-                    <li class="header__menu-item "><a href="./news">News</a>
-                    </li>
-
-
-
-
-                    <li class="header__menu-item "><a href="./about">About company</a>
-
-
-
-
-                </ul>
-            </div>
-            <div class="switch desctop">
-                <span class="left">Eng</span><input type="checkbox" id="desctop" />
-                <label for="desctop"></label>
-                <span class="right">Rus</span>
-            </div>
-            <div class="header__link">
-
-
-                <a class="btn btn_outline" href="#" target="_blank">
-
-                    <span>Go to Bot</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                    </svg>
-                </a>
-
-
-
-
-            </div>
-
-        </div>
-
-
-    </header>
-    <header class="header-mobile">
-        <div class="header-mobile__wrapper">
-            <a class="header__logo" href="#">
-                <img src="./assets/img/logo.svg" alt="logo">
-            </a>
-            <div class="switch mobile">
-                <span class="left">Eng</span><input type="checkbox" id="mobile" />
-                <label for="mobile"></label>
-                <span class="right">Rus</span>
-            </div>
-
-            <div class="header__menu-mob">
-                <div class="burger">
-
-                    <div class="burger__close">
-                        <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_181_13466)">
-                                <rect x="6" width="32" height="4" rx="2" fill="#2F80ED" />
-                                <rect x="6" y="9" width="32" height="4" rx="2" fill="#2F80ED" />
-                                <rect x="6" y="18" width="32" height="4" rx="2" fill="#2F80ED" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_181_13466">
-                                    <rect width="44" height="22" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </div>
-                    <div class="burger__open">
-                        <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_181_13495)">
-                                <path d="M22 11L31 20M13 20L22 11L13 20ZM31 2L22 11L31 2ZM22 11L13 2L22 11Z"
-                                    stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_181_13495">
-                                    <rect width="44" height="22" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="nav nav-mobile">
-            <ul class="nav-mobile__list">
-
-                <li class="nav-mobile__list-item"><a href="./payment-services">Payment services</a></li>
-
-                <li class="nav-mobile__list-item"><a href="./news">News</a></li>
-
-                <li class="nav-mobile__list-item"><a href="./about">About company</a></li>
 
             </ul>
+        </div>
+        <div class="switch desctop">
+    <span class="left">Eng</span><input type="checkbox" id="desctop" />
+    <label for="desctop"></label>
+    <span class="right">Rus</span>
+</div>
+        <div class="header__link">
+            
+
+<a class="btn btn_outline" href="#" target="_blank">
+
+    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
 
 
-            <a class="btn btn_outline" href="#" target="_blank">
 
-                <span>Go to Bot</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                </svg>
+
+        </div>
+
+    </div>
+
+
+</header>
+<header class="header-mobile">
+    <div class="header-mobile__wrapper">
+        <a class="header__logo" href="#">
+            <img src="./assets/img/logo.svg" alt="logo">
+        </a>
+        <div class="switch mobile">
+    <span class="left">Eng</span><input type="checkbox" id="mobile" />
+    <label for="mobile"></label>
+    <span class="right">Rus</span>
+</div>
+
+        <div class="header__menu-mob">
+            <div class="burger">
+
+                <div class="burger__close">
+                    <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_13466)">
+                            <rect x="6" width="32" height="4" rx="2" fill="#2F80ED" />
+                            <rect x="6" y="9" width="32" height="4" rx="2" fill="#2F80ED" />
+                            <rect x="6" y="18" width="32" height="4" rx="2" fill="#2F80ED" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_13466">
+                                <rect width="44" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="burger__open">
+                    <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_13495)">
+                            <path d="M22 11L31 20M13 20L22 11L13 20ZM31 2L22 11L31 2ZM22 11L13 2L22 11Z"
+                                stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_13495">
+                                <rect width="44" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav nav-mobile">
+        <ul class="nav-mobile__list">
+            
+            <li class="nav-mobile__list-item"><a href="./ru/payment-services">Оплата сервисов</a></li>
+            
+            <li class="nav-mobile__list-item"><a href=""></a></li>
+            
+            <li class="nav-mobile__list-item"><a href="./ru/about">О компании</a></li>
+            
+        </ul>
+        
+
+<a class="btn btn_outline" href="#" target="_blank">
+
+    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
+
+
+
+
+    </div>
+</header>
+
+ 
+
+  
+  <main>
+    
+
+<section class=" main-top-section">
+    <div class="container ">
+        <div class="main-top-section__content main-top-section__content-top">
+            <div class="main-top-section__left">
+                <div class="switch tablet">
+    <span class="left">Eng</span><input type="checkbox" id="tablet" />
+    <label for="tablet"></label>
+    <span class="right">Rus</span>
+</div>
+                <h1><span>VessPay</span> — оплачивайте популярные сервисы в один клик!</h1>
+                <p>Покупка неограниченного количества аккаунтов на любом сервисе через Telegram бота</p>
+                
+
+<a class="btn btn_blue" href="#" target="_blank">
+
+    <span>Перейти к боту</span>  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+    </svg>
+</a>
+
+
+
+
+            </div>
+            <div class="main-top-section__right">
+                <img src="./assets/img/anime.png" alt="animation">
+            </div>
+        </div>
+        <div class="main-top-section__content main-top-section__content-bottom">
+            
+            <div class="card-text-with-icon card">
+    <img src="./../assets/img/1.svg" alt="icon">
+    <p>Регистрация аккаунта<br>
+        на ваши данные</p>
+</div>
+            
+            <div class="card-text-with-icon card">
+    <img src="./../assets/img/2.svg" alt="icon">
+    <p>Инструкции по вводу,<br>
+        оплате и использованию<br>
+        придут в телеграм</p>
+</div>
+            
+            <div class="card-text-with-icon card">
+    <img src="./../assets/img/3.svg" alt="icon">
+    <p>Безопасно и<br>
+        конфиденциально</p>
+</div>
+            
+            <div class="card-text-with-icon card">
+    <img src=" ./../assets/img/4.svg" alt="icon">
+    <p>Круглосуточная техподдержка  </p>
+</div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section class=" payment-service-section">
+    <div class="container ">
+        <div class="payment-service-section__top">
+            <div class="payment-service-section__top-title">Получи доступ уже сейчас</div>
+        </div>
+        <div class="payment-service-section__content">
+            <div class="payment-service-section__left">
+                <div class="payment-service-section__subtitle">
+                    к Netflix, YouTube Premium, Spotify
+                </div>
+                <h2>Оплата сервисов</h2>
+                <p class="payment-service-section__text">Приобретайте подписки на зарубежные сервисы. Продление существующих аккаунтов и создание новых на любой платформе.</p>
+                <p class="payment-service-section__subtext">Быстро и легко</p>
+                
+                
+
+<a class="btn btn_black" href="#" target="_blank">
+
+    <span>Перейти к боту</span>  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+    </svg>
+</a>
+
+
+
+
+            </div>
+            <div class="payment-service-section__right">
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service1.svg" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service2.svg" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service3.svg" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service4.svg" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service5.svg" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service6.svg" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service7.svg" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service8.svg" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service9.svg" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service10.svg" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service11.svg" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service12.svg" alt="images">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="video-with-list-section section">
+
+    <div class="container">
+        <div class="video-with-list-section__content">
+            <div class="video-with-list-section__left">
+                <div class="video-wrapper">
+    <div class="video" data-video="WeXCUGqN4e8">
+        <svg width="102" height="100" viewBox="0 0 102 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50.9853" cy="50" rx="50.2963" ry="50" fill="white" fill-opacity="0.6" />
+            <path
+                d="M60.5195 46.9164C62.5195 48.0711 62.5195 50.9578 60.5195 52.1125L46.2186 60.3692C44.2186 61.5239 41.7186 60.0805 41.7186 57.7711L41.7186 41.2578C41.7186 38.9484 44.2186 37.505 46.2186 38.6597L60.5195 46.9164Z"
+                fill="#4F4F4F" />
+        </svg>
+
+    </div>
+</div>
+            </div>
+            <div class="video-with-list-section__right">
+                <h2 class="title">Как это работает?</h2>
+                <ul class="video-with-list-section__list">
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Установите приложение  <a href = "#">Telegram app</a>
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Зайдите в бота @Bottest123
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Выберите интересующий вас сервис
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Следуйте инструкциям в боте
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Готово! Пользуйтесь вашим любимым сервисом
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="steps-section section">
+
+    <div class="container">
+        <div class="swiper steps-section__swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+
+                    <div class="steps-section__slide steps-section-slide">
+
+                        <img class="steps-section-slide__image" src="./../assets/img/step1.svg" alt="">
+
+                        <p>Выберите сервис</p>
+
+                    </div>
+                    
+                    <span class="swiper-arrow">
+                        <img src="./assets/img/arrow-blue.svg" alt="">
+                    </span>
+                    
+                </div>
+
+                
+                <div class="swiper-slide">
+
+                    <div class="steps-section__slide steps-section-slide">
+
+                        <img class="steps-section-slide__image" src="./../assets/img/step2.svg" alt="">
+
+                        <p>Зарегистрируйте аккаунт</p>
+
+                    </div>
+                    
+                    <span class="swiper-arrow">
+                        <img src="./assets/img/arrow-blue.svg" alt="">
+                    </span>
+                    
+                </div>
+
+                
+                <div class="swiper-slide">
+
+                    <div class="steps-section__slide steps-section-slide">
+
+                        <img class="steps-section-slide__image" src="./../assets/img/step3.svg" alt="">
+
+                        <p>Пользуйтесь!</p>
+
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        
+    </div>
+</section>
+
+
+<section class=" payment-icons-section section">
+    <div class="container ">
+
+        <h2 class="payment-icons-section__title">Мы работаем со всеми популярными <br> платежными сервисами</h2>
+
+        <div class="payment-icons-section__content">
+            
+            <div class="card ">
+                <img src="./../assets/img/payment2.svg" alt="icon">
+            </div>
+            
+            <div class="card ">
+                <img src="./../assets/img/payment3.svg" alt="icon">
+            </div>
+            
+            <div class="card ">
+                <img src="./../assets/img/payment1.svg" alt="icon">
+            </div>
+            
+            <div class="card ">
+                <img src="./../assets/img/payment4.svg" alt="icon">
+            </div>
+            
+            <div class="card ">
+                <img src="./../assets/img/payment5.svg" alt="icon">
+            </div>
+            
+            <div class="card ">
+                <img src="./../assets/img/payment6.svg" alt="icon">
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+
+<section class=" banner-with-icon-section section">
+    <div class="container ">
+        <div class="banner-with-icon-section__content">
+            <div class="banner-with-icon-section__left">
+                <h2 class="banner-with-icon-section__title">Оформи подписку на сервис через VessPay и стань участником розыгрыша годовой подписки на YouTube Premium</h2>
+                
+
+<a class="btn btn_black" href="#" target="_blank">
+
+    <span>Перейти к боту</span>  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+    </svg>
+</a>
+
+
+
+
+            </div>
+            <div class="banner-with-icon-section__right">
+                <img src="./../assets/img/big-icon.svg" alt="icon">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class=" news-main-section section">
+    <div class="container ">
+
+        <h2 class="news-main-section__title"></h2>
+
+        <div class="news-main-section__content">
+            
+        </div>
+        
+
+<div class="btn btn_">
+    <span></span> 
+</div>
+
+
+
+
+    </div>
+
+</section>
+
+
+  </main>
+
+
+  
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a class="footer__logo" href="/">
+                <img src="./assets/img/logo-white.svg" alt="logo">
             </a>
 
+            <ul class="footer__nav">
+                
+                <li><a href="./ru/payment-services">Оплата сервисов</a></li>
+                
+                <li><a href=""></a></li>
+                
+                <li><a href="./ru/about">О компании</a></li>
+                
+            </ul>
+            
+
+<a class="btn btn_white-transperent" href="#" target="_blank">
+
+    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
+
 
 
 
         </div>
-    </header>
-
-
-
-
-    <main>
-
-
-        <section class=" main-top-section">
-            <div class="container ">
-                <div class="main-top-section__content main-top-section__content-top">
-                    <div class="main-top-section__left">
-                        <div class="switch tablet">
-                            <span class="left">Eng</span><input type="checkbox" id="tablet" />
-                            <label for="tablet"></label>
-                            <span class="right">Rus</span>
-                        </div>
-                        <h1><span>VessPay</span> - create multiple accounts in one click! </h1>
-                        <p>With the usage of our platform you can purchase unlimited number of accounts at any services
-                            that you wish.</p>
-
-
-                        <a class="btn btn_blue" href="#" target="_blank">
-
-                            <span>Go to Bot</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                            </svg>
-                        </a>
-
-
-
-
-                    </div>
-                    <div class="main-top-section__right">
-                        <img src="./assets/img/anime.png" alt="animation">
-                    </div>
-                </div>
-                <div class="main-top-section__content main-top-section__content-bottom">
-
-                    <div class="card-text-with-icon card">
-                        <img src="./assets/img/1.svg" alt="icon">
-                        <p>The account is registered<br>
-                            to your details</p>
-                    </div>
-
-                    <div class="card-text-with-icon card">
-                        <img src="./assets/img/2.svg" alt="icon">
-                        <p>Instructions on how to enter,<br>
-                            Pay and use manuals</p>
-                    </div>
-
-                    <div class="card-text-with-icon card">
-                        <img src="./assets/img/3.svg" alt="icon">
-                        <p>Safely and<br>
-                            confidentially</p>
-                    </div>
-
-                    <div class="card-text-with-icon card">
-                        <img src=" ./assets/img/4.svg" alt="icon">
-                        <p>24/7 Support</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class=" payment-service-section">
-            <div class="container ">
-                <div class="payment-service-section__top">
-                    <div class="payment-service-section__top-title">Get access now</div>
-                </div>
-                <div class="payment-service-section__content">
-                    <div class="payment-service-section__left">
-                        <div class="payment-service-section__subtitle">
-                            over 40 services in telegram bot
-                        </div>
-                        <h2>Payment for services</h2>
-                        <p class="payment-service-section__text">Purchase and renewal of subscriptions to any foreign
-                            services. Renew existing accounts and buy new ones in almost any service.</p>
-                        <p class="payment-service-section__subtext"> Fast and easy.</p>
-
-
-
-                        <a class="btn btn_black" href="#" target="_blank">
-
-                            <span>Go to Bot</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                            </svg>
-                        </a>
-
-
-
-
-                    </div>
-                    <div class="payment-service-section__right">
-
-                        <div class="card ">
-                            <img src=" ./assets/img/service1.svg" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./assets/img/service2.svg" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./assets/img/service3.svg" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./assets/img/service4.svg" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./assets/img/service5.svg" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./assets/img/service6.svg" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./assets/img/service7.svg" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./assets/img/service8.svg" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./assets/img/service9.svg" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./assets/img/service10.svg" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./assets/img/service11.svg" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./assets/img/service12.svg" alt="images">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="video-with-list-section section">
-
-            <div class="container">
-                <div class="video-with-list-section__content">
-                    <div class="video-with-list-section__left">
-                        <div class="video-wrapper">
-                            <div class="video" data-video="WeXCUGqN4e8">
-                                <svg width="102" height="100" viewBox="0 0 102 100" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <ellipse cx="50.9853" cy="50" rx="50.2963" ry="50" fill="white"
-                                        fill-opacity="0.6" />
-                                    <path
-                                        d="M60.5195 46.9164C62.5195 48.0711 62.5195 50.9578 60.5195 52.1125L46.2186 60.3692C44.2186 61.5239 41.7186 60.0805 41.7186 57.7711L41.7186 41.2578C41.7186 38.9484 44.2186 37.505 46.2186 38.6597L60.5195 46.9164Z"
-                                        fill="#4F4F4F" />
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video-with-list-section__right">
-                        <h2 class="title">How does it work?</h2>
-                        <ul class="video-with-list-section__list">
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Download and install the <a href="#">Telegram app</a>
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Start the bot @Bottest123
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Select the service you are interested in
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Follow the instructions
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Done! Use your favorite services
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="steps-section section">
-
-            <div class="container">
-                <div class="swiper steps-section__swiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-
-                            <div class="steps-section__slide steps-section-slide">
-
-                                <img class="steps-section-slide__image" src="./assets/img/step1.svg" alt="">
-
-                                <p>Select a service</p>
-
-                            </div>
-
-                            <span class="swiper-arrow">
-                                <img src="./assets/img/arrow-blue.svg" alt="">
-                            </span>
-
-                        </div>
-
-
-                        <div class="swiper-slide">
-
-                            <div class="steps-section__slide steps-section-slide">
-
-                                <img class="steps-section-slide__image" src="./assets/img/step2.svg" alt="">
-
-                                <p>Register account</p>
-
-                            </div>
-
-                            <span class="swiper-arrow">
-                                <img src="./assets/img/arrow-blue.svg" alt="">
-                            </span>
-
-                        </div>
-
-
-                        <div class="swiper-slide">
-
-                            <div class="steps-section__slide steps-section-slide">
-
-                                <img class="steps-section-slide__image" src="./assets/img/step3.svg" alt="">
-
-                                <p>Take advantage!</p>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </section>
-
-
-        <section class=" payment-icons-section section">
-            <div class="container ">
-
-                <h2 class="payment-icons-section__title">We work with a wide range <br> of payment services</h2>
-
-                <div class="payment-icons-section__content">
-
-                    <div class="card ">
-                        <img src="./assets/img/payment1.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./assets/img/payment2.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./assets/img/payment3.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./assets/img/payment4.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./assets/img/payment5.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./assets/img/payment6.svg" alt="icon">
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-
-        <section class=" banner-with-icon-section section">
-            <div class="container ">
-                <div class="banner-with-icon-section__content">
-                    <div class="banner-with-icon-section__left">
-                        <h2 class="banner-with-icon-section__title">Gift for new users - no fee commissions for 30 days
-                            on all services!</h2>
-
-
-                        <a class="btn btn_black" href="#" target="_blank">
-
-                            <span>Go to Bot</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                            </svg>
-                        </a>
-
-
-
-
-                    </div>
-                    <div class="banner-with-icon-section__right">
-                        <img src="./assets/img/big-icon.svg" alt="icon">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <section class=" news-main-section section">
-            <div class="container ">
-
-                <h2 class="news-main-section__title">News</h2>
-
-                <div class="news-main-section__content">
-
-
-
-
-
-                    <div class="news-item ">
-                        <div class="news-item__wrapper">
-                            <div class="news-item__top">
-                                <img src="./../assets/img/news1.jpg" alt="images">
-                            </div>
-                            <div class="news-item__bottom">
-                                <div class="news-item__time">
-                                    <time>31.03.2022</time>
-                                </div>
-                                <div class="news-item__title">
-                                    The price of the DeFi-project Aave token increased by 30%
-                                </div>
-                                <div class="news-item__text">
-                                    In the last 24 hours, the token of the Aave landing platform has grown by about 30%.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                    <div class="news-item ">
-                        <div class="news-item__wrapper">
-                            <div class="news-item__top">
-                                <img src="./../assets/img/news2.jpg" alt="images">
-                            </div>
-                            <div class="news-item__bottom">
-                                <div class="news-item__time">
-                                    <time>20.03.22</time>
-                                </div>
-                                <div class="news-item__title">
-                                    Visa has launched a training program to create NFTs
-                                </div>
-                                <div class="news-item__text">
-                                    Payments giant Visa has launched an educational program on business
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                    <div class="news-item ">
-                        <div class="news-item__wrapper">
-                            <div class="news-item__top">
-                                <img src="./../assets/img/news3.jpg" alt="images">
-                            </div>
-                            <div class="news-item__bottom">
-                                <div class="news-item__time">
-                                    <time>31.03.2022</time>
-                                </div>
-                                <div class="news-item__title">
-                                    The price of the DeFi-project Aave token increased by 30%
-                                </div>
-                                <div class="news-item__text">
-                                    In the last 24 hours, the token of the Aave landing platform has grown by about 30%.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                    <div class="news-item hidden">
-                        <div class="news-item__wrapper">
-                            <div class="news-item__top">
-                                <img src="./../assets/img/news4.jpg" alt="images">
-                            </div>
-                            <div class="news-item__bottom">
-                                <div class="news-item__time">
-                                    <time>31.03.2022</time>
-                                </div>
-                                <div class="news-item__title">
-                                    The price of the DeFi-project Aave token increased by 30%
-                                </div>
-                                <div class="news-item__text">
-                                    In the last 24 hours, the token of the Aave landing platform has grown by about 30%.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-
-
-                <a class="btn btn_outline" href="#" target="_blank">
-
-                    <span>View all news</span>
-                </a>
-
-
-
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <a class="footer__logo" href="/">
-                    <img src="./assets/img/logo-white.svg" alt="logo">
-                </a>
-
-                <ul class="footer__nav">
-
-                    <li><a href="./payment-services">Payment services</a></li>
-
-                    <li><a href="./news">News</a></li>
-
-                    <li><a href="./about">About company</a></li>
-
-                </ul>
-
-
-                <a class="btn btn_white-transperent" href="#" target="_blank">
-
-                    <span>Go to Bot</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                    </svg>
-                </a>
-
-
-
-
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__copyright">© Vesspay, 2022</div>
-                <ul class="footer__links">
-
-                    <li>
-
-
-                        <a href="mailto:info@vesspay.com">info@vesspay.com</a>
-
-                    </li>
-
-                    <li>
-
-
-                        <a href="#" class="dowload" download="">Terms of Use</a>
-
-                    </li>
-
-                    <li>
-
-
-                        <a href="#" class="dowload" download="">Privacy Policy</a>
-
-                    </li>
-
-                </ul>
-                <div class="footer__projectBy">project by <a href="#">NFTWorkin.com</a></div>
-            </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">© Vesspay, 2022</div>
+            <ul class="footer__links">
+                
+                <li>
+
+                    
+                    <a href="mailto:info@vesspay.com">info@vesspay.com</a>
+                    
+                </li>
+                
+                <li>
+
+                    
+                    <a href="#" class="dowload" download="">Правила использования</a>
+                    
+                </li>
+                
+                <li>
+
+                    
+                    <a href="#" class="dowload" download="">Политика конфиденциальности</a>
+                    
+                </li>
+                
+            </ul>
+            <div class="footer__projectBy">project by <a href="#">NFTWorkin.com</a></div>
         </div>
-    </footer>
-
-
-    <script src="./assets/js/main.min.js"></script>
+    </div>
+</footer>
+ 
+  
+<script src="./assets/js/main.min.js"></script> 
 </body>
 
 </html>
