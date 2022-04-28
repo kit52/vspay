@@ -57,12 +57,12 @@
                 margin-top: 0px;
                 margin-bottom: 0;
                 position: absolute;
-                width: 429px;
+                width: 343px;
                 bottom: -32px;
                 right: 6px;
             }
             @media (min-width: 1200px) {
-                width: 438px;
+                width: 343px;
                 bottom: -50px;
                 right: 62px;
             }
@@ -77,10 +77,11 @@
     }
     &__left {
         @media (min-width: 880px) {
-            max-width: 306px;
+            width: 100%;
+            max-width: 360px;
         }
         @media (min-width: 1200px) {
-            max-width: 477px;
+            max-width: 620px;
         }
     }
 }
