@@ -29,7 +29,8 @@
     }
     .btn {
         @media (min-width: 560px) {
-            max-width: 160px;
+            min-width: 160px;
+            width: fit-content;
         }
     }
     h2 {

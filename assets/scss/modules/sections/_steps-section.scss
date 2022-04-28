@@ -67,8 +67,12 @@
     &-slide {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
         justify-content: center;
+        &__image {
+            width: 100%;
+            max-width: 104px;
+        }
         p {
             margin-top: 48px;
             margin-bottom: 0;
