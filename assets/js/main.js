@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const url = item.getAttribute('data-href');
                 setTimeout(() => {
                     location.href = url
-                }, 1000)
+                }, 700)
             })
         })
     }
