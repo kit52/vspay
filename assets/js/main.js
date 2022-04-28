@@ -101,4 +101,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (accordion) {
         accordionsInit()
     }
+    const switchLink = document.querySelectorAll('.switch');
+    if (switchLink) {
+        console.log("fdsafas");
+        switchLink.forEach(item => {
+            item.addEventListener('click', () => {
+                console.log('click');
+                const url = item.getAttribute('data-href');
+                setTimeout(() => {
+                    location.href = url
+                }, 1000)
+            })
+        })
+    }
 });
