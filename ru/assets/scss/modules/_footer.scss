@@ -1,0 +1,117 @@
+.footer {
+    background-color: var(--grey1);
+    &__nav {
+        order: 1;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+
+        width: 100%;
+        margin-top: 40px;
+
+        @media (min-width: 768px) {
+            width: unset;
+            order: unset;
+            margin-top: 0;
+            margin-bottom: 0px;
+        }
+        li {
+            margin-bottom: 24px;
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+            &:not(:last-child) {
+                margin-right: 40px;
+                @media (min-width: 1200px) {
+                    margin-right: 54px;
+                }
+            }
+
+            a {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #fff;
+            }
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__links {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 40px;
+        width: 100%;
+
+        order: -1;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            order: unset;
+            width: unset;
+            justify-content: unset;
+            margin-bottom: 0px;
+        }
+        li:not(:last-child) {
+            margin-right: 32px;
+        }
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: rgba(253, 254, 255, 0.5);
+        }
+        a.dowload {
+            text-decoration: underline;
+        }
+    }
+    &__copyright,
+    &__projectBy {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(253, 254, 255, 0.5);
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: rgba(253, 254, 255, 0.5);
+            text-decoration: underline;
+        }
+    }
+    &__top,
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__top {
+        margin-bottom: 32px;
+    }
+    .btn {
+        min-width: 160px;
+        width: fit-content;
+        justify-content: flex-end;
+    }
+    .container {
+        padding-top: 24px;
+        padding-bottom: 30px;
+        @media (min-width: 768px) {
+            padding-top: 32px;
+            padding-bottom: 28px;
+        }
+    }
+}
