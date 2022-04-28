@@ -1,0 +1,204 @@
+.payment-service-section {
+    position: relative;
+    margin-top: 136px;
+    margin-bottom: 60px;
+    @media (min-width: 768px) {
+        margin-top: 152px;
+        margin-bottom: 102px;
+    }
+    @media (min-width: 992px) {
+        margin-top: 192px;
+        margin-bottom: 120px;
+    }
+    .container {
+        position: relative;
+    }
+    &__content {
+        color: #fff;
+        position: relative;
+        z-index: 4;
+        background-color: var(--green1);
+        border-radius: 16px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        @media (min-width: 768px) {
+            align-items: unset;
+            padding: 45px;
+            flex-direction: unset;
+        }
+    }
+    &__top {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        top: -52px;
+        height: 172px;
+        z-index: 2;
+        background: linear-gradient(180deg, #dff2d9 0%, #ffffff 100%);
+        border-radius: 16px;
+        @media (min-width: 768px) {
+            top: -72px;
+            left: 40px;
+            right: 40px;
+        }
+        @media (min-width: 768px) {
+            top: -87px;
+        }
+        &-title {
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            margin-top: 16px;
+            @media (min-width: 768px) {
+                margin-top: 20px;
+                font-size: 32px;
+                line-height: 39px;
+            }
+            @media (min-width: 992px) {
+                margin-top: 28px;
+            }
+        }
+    }
+    h2 {
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 16px;
+        @media (min-width: 768px) {
+            margin-bottom: 32px;
+        }
+    }
+    &__subtitle {
+        color: #fff;
+        border-radius: 16px;
+        padding: 12px 20px;
+        border: 1px solid #7bd75f;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        display: inline-block;
+        margin: 0 auto;
+        line-height: 17px;
+        margin-bottom: 16px;
+        @media (min-width: 768px) {
+            font-size: 16px;
+            margin: 0;
+            line-height: 19px;
+            margin-bottom: 32px;
+        }
+    }
+    p {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+        @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 19px;
+            text-align: start;
+        }
+    }
+    ul {
+        padding-left: 16px;
+        li {
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    .payment-service-section__text {
+        margin-bottom: 24px;
+    }
+    .btn {
+        margin-top: 32px;
+    }
+    &__right {
+        display: grid;
+        grid-template-columns: repeat(2, 116px);
+        grid-template-rows: repeat(3, 80px);
+        grid-gap: 8px;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        @media (min-width: 768px) {
+            justify-content: right;
+            grid-gap: 10px;
+            margin-left: 30px;
+        }
+        @media (min-width: 850px) {
+            grid-template-columns: repeat(2, 160px);
+            grid-template-rows: repeat(3, 110px);
+        }
+        @media (min-width: 992px) {
+            margin-left: 80px;
+        }
+        @media (min-width: 1200px) {
+            margin-left: 80px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .card.hidden {
+            display: none;
+            @media (min-width: 1200px) {
+                display: flex;
+            }
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 24px;
+        @media (min-width: 768px) {
+            display: block;
+            margin-top: 0px;
+        }
+    }
+    .card {
+        background-image: url("../img/background.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: border-box;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 116px;
+        height: 80px;
+        @media (min-width: 850px) {
+            width: 160px;
+            height: 110px;
+        }
+
+        img {
+            max-width: 80px;
+            width: 80%;
+            @media (min-width: 850px) {
+                max-width: unset;
+                width: 75%;
+                margin: 15px;
+            }
+        }
+    }
+    .btn {
+        @media (min-width: 768px) {
+            min-width: 213px;
+            width: fit-content;
+        }
+        @media (min-width: 992px) {
+            min-width: 180px;
+            width: fit-content;
+        }
+    }
+}

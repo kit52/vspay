@@ -1,0 +1,41 @@
+.payment-icons-section {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        @media (min-width: 768px) {
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+    .card {
+        background-color: var(--blue3);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 75px;
+        @media (min-width: 768px) {
+            min-height: 115px;
+        }
+        @media (min-width: 992px) {
+            min-height: 90px;
+        }
+        img {
+            max-width: calc(100% - 20px);
+        }
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        @media (min-width: 992px) {
+            margin-bottom: 32px;
+        }
+        @media (min-width: 992px) {
+            margin-bottom: 48px;
+        }
+    }
+}
