@@ -76,4 +76,13 @@
         color: #fff;
         fill: #fff;
     }
+    &_grey {
+        color: #a6a6a7;
+        fill: #a6a6a7;
+
+        span {
+            line-height: 15px;
+            font-size: 12px;
+        }
+    }
 }
