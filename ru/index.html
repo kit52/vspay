@@ -2,1103 +2,833 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Обязательный (и достаточный) тег для браузеров -->
+<link type="image/x-icon" rel="shortcut icon" href="./../assets/img/favicon.ico">
+
+<!-- Дополнительные иконки для десктопных браузеров -->
+<link type="image/png" sizes="16x16" rel="icon" href="./../assets/img/favicon-16x16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="./../assets/img/favicon-32x32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="./../assets/img/favicon-96x96.png">
+<link type="image/png" sizes="120x120" rel="icon" href="./../assets/img/favicon-120x120.png">
+
+<!-- Иконки для Android -->
+<link type="image/png" sizes="72x72" rel="icon" href="./../assets/img/android-icon-72x72.png">
+<link type="image/png" sizes="96x96" rel="icon" href="./../assets/img/android-icon-96x96.png">
+<link type="image/png" sizes="144x144" rel="icon" href="./../assets/img/android-icon-144x144.png">
+<link type="image/png" sizes="192x192" rel="icon" href="./../assets/img/android-icon-192x192.png">
+<link type="image/png" sizes="512x512" rel="icon" href="./../assets/img/android-icon-512x512.png">
 
 
-    <title>VessPay</title>
+<!-- Иконки для iOS (Apple) -->
+<link sizes="57x57" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-57x57.png">
+<link sizes="60x60" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-60x60.png">
+<link sizes="72x72" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-72x72.png">
+<link sizes="76x76" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-76x76.png">
+<link sizes="114x114" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-114x114.png">
+<link sizes="120x120" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-120x120.png">
+<link sizes="144x144" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-144x144.png">
+<link sizes="152x152" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-152x152.png">
+<link sizes="180x180" rel="apple-touch-icon" href="./../assets/img/apple-touch-icon-180x180.png">
 
-    <link rel="stylesheet" href="./../assets/css/style.css">
+<!-- Иконки для MacOS (Apple) -->
+<link color="#e52037" rel="mask-icon" href="./../assets/img/safari-pinned-tab.svg">
 
-</head>
+<!-- Иконки и цвета для плиток Windows -->
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="./../assets/img/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="./../assets/img/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="./../assets/img/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="./../assets/img/mstile-310x310.png">
+<meta name="msapplication-square310x310logo" content="./../assets/img/mstile-310x150.png">
+<meta name="application-name" content="My Application">
+<title>VessPay</title>
+
+<link rel="stylesheet" href="./../assets/css/style.css"> 
+
+  </head>
 
 <body>
 
+  
+<header class="header header-desctop">
+    <div class="container">
+        <a class="header__logo" href="./">
+            <img src="../assets/img/logo.svg" alt="logo">
+        </a>
+        <div class="header__menu">
+            <ul>
+                
 
-    <header class="header header-desctop">
-        <div class="container">
-            <a class="header__logo" href="./">
-                <img src="../assets/img/logo.svg" alt="logo">
-            </a>
-            <div class="header__menu">
-                <ul>
+                
+                <li class="header__menu-item "><a href="./payment-services">Оплата сервисов</a>
+                </li>
+                
+                
 
+                
+                <li class="header__menu-item "><a href="./about">О компании</a>
+                </li>
+                
+                
 
-                    <li class="header__menu-item "><a href="./payment-services">Оплата сервисов</a>
-                    </li>
-
-                    <li class="header__menu-item "><a href="./about">О компании</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="switch desctop" data-href='./../'>
-                <span class="left">Eng</span><input type="checkbox" id="desctop" checked />
-                <label for="desctop"></label>
-                <span class="right">Rus</span>
-            </div>
-            <div class="header__link">
-
-
-                <a class="btn btn_outline" href="https://t.me/vesspay_bot" target="_blank">
-
-                    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                    </svg>
-                </a>
-
-
-
-
-            </div>
-
-        </div>
-
-
-    </header>
-    <header class="header-mobile">
-        <div class="header-mobile__wrapper">
-            <a class="header__logo" href="./">
-                <img src="../assets/img/logo.svg" alt="logo">
-            </a>
-            <div class="switch mobile" data-href='./../'>
-                <span class="left">Eng</span><input type="checkbox" id="mobile" checked />
-                <label for="mobile"></label>
-                <span class="right">Rus</span>
-            </div>
-
-            <div class="header__menu-mob">
-                <div class="burger">
-
-                    <div class="burger__close">
-                        <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_181_13466)">
-                                <rect x="6" width="32" height="4" rx="2" fill="#2F80ED" />
-                                <rect x="6" y="9" width="32" height="4" rx="2" fill="#2F80ED" />
-                                <rect x="6" y="18" width="32" height="4" rx="2" fill="#2F80ED" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_181_13466">
-                                    <rect width="44" height="22" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </div>
-                    <div class="burger__open">
-                        <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_181_13495)">
-                                <path d="M22 11L31 20M13 20L22 11L13 20ZM31 2L22 11L31 2ZM22 11L13 2L22 11Z"
-                                    stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_181_13495">
-                                    <rect width="44" height="22" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="nav nav-mobile">
-            <ul class="nav-mobile__list">
-
-                <li class="nav-mobile__list-item"><a href="./payment-services">Оплата сервисов</a></li>
-
-                <li class="nav-mobile__list-item"><a href=""></a></li>
-
-                <li class="nav-mobile__list-item"><a href="./about">О компании</a></li>
 
             </ul>
+        </div>
+        <div class="switch desctop" data-href='./../'>
+    <span class="left">Eng</span><input type="checkbox" id="desctop" checked />
+    <label for="desctop"></label>
+    <span class="right">Rus</span>
+</div>
+        <div class="header__link">
+            
+
+<a class="btn btn_outline" href="https://t.me/vesspay_bot" target="_blank">
+
+    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
 
 
-            <a class="btn btn_outline" href="https://t.me/vesspay_bot" target="_blank">
 
-                <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                </svg>
+
+        </div>
+
+    </div>
+
+
+</header>
+<header class="header-mobile">
+    <div class="header-mobile__wrapper">
+        <a class="header__logo" href="./">
+            <img src="../assets/img/logo.svg" alt="logo">
+        </a>
+        <div class="switch mobile" data-href='./../'>
+    <span class="left">Eng</span><input type="checkbox" id="mobile" checked />
+    <label for="mobile"></label>
+    <span class="right">Rus</span>
+</div>
+
+        <div class="header__menu-mob">
+            <div class="burger">
+
+                <div class="burger__close">
+                    <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_13466)">
+                            <rect x="6" width="32" height="4" rx="2" fill="#2F80ED" />
+                            <rect x="6" y="9" width="32" height="4" rx="2" fill="#2F80ED" />
+                            <rect x="6" y="18" width="32" height="4" rx="2" fill="#2F80ED" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_13466">
+                                <rect width="44" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="burger__open">
+                    <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181_13495)">
+                            <path d="M22 11L31 20M13 20L22 11L13 20ZM31 2L22 11L31 2ZM22 11L13 2L22 11Z"
+                                stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_181_13495">
+                                <rect width="44" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav nav-mobile">
+        <ul class="nav-mobile__list">
+            
+            <li class="nav-mobile__list-item"><a href="./payment-services">Оплата сервисов</a></li>
+            
+            <li class="nav-mobile__list-item"><a href=""></a></li>
+            
+            <li class="nav-mobile__list-item"><a href="./about">О компании</a></li>
+            
+        </ul>
+        
+
+<a class="btn btn_outline" href="https://t.me/vesspay_bot" target="_blank">
+
+    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
+
+
+
+
+    </div>
+</header>
+
+ 
+
+  
+  <main>
+    
+
+<section class=" main-top-section">
+    <div class="container ">
+        <div class="main-top-section__content main-top-section__content-top">
+            <div class="main-top-section__left">
+                <div class="switch tablet" data-href='./../'>
+    <span class="left">Eng</span><input type="checkbox" id="tablet" checked />
+    <label for="tablet"></label>
+    <span class="right">Rus</span>
+</div>
+                <h1><span>VessPay</span> — оплачивайте популярные сервисы в один клик!</h1>
+                <p>Покупка неограниченного количества аккаунтов на любом сервисе через Telegram бота</p>
+                
+
+<a class="btn btn_blue" href="https://t.me/vesspay_bot" target="_blank">
+
+    <span>Перейти к боту</span>  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+    </svg>
+</a>
+
+
+
+
+            </div>
+            <div class="main-top-section__right">
+                <img src="./../assets/img/animation.gif" alt="animation">
+            </div>
+        </div>
+        <div class="main-top-section__content main-top-section__content-bottom">
+            
+            <div class="card-text-with-icon card">
+    <img src="./../assets/img/1.svg" alt="icon">
+    <p>Регистрация аккаунта<br>
+        на ваши данные</p>
+</div>
+            
+            <div class="card-text-with-icon card">
+    <img src="./../assets/img/2.svg" alt="icon">
+    <p>Инструкции по вводу,<br>
+        оплате и использованию<br>
+        придут в телеграм</p>
+</div>
+            
+            <div class="card-text-with-icon card">
+    <img src="./../assets/img/3.svg" alt="icon">
+    <p>Безопасно и<br>
+        конфиденциально</p>
+</div>
+            
+            <div class="card-text-with-icon card">
+    <img src=" ./../assets/img/4.svg" alt="icon">
+    <p>Круглосуточная техподдержка  </p>
+</div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section class=" payment-service-section ">
+    <div class="container ">
+        <div class="payment-service-section__top">
+            <div class="payment-service-section__top-title">Получи доступ уже сейчас</div>
+        </div>
+        <div class="payment-service-section__content">
+            <div class="payment-service-section__left">
+                <div class="payment-service-section__subtitle">
+                    к Netflix, YouTube Premium, Spotify
+                </div>
+                <h2>Оплата сервисов</h2>
+                <p class="payment-service-section__text">Приобретайте подписки на зарубежные сервисы. Продление существующих аккаунтов и создание новых на любой платформе.</p>
+                <p class="payment-service-section__subtext">Быстро и легко</p>
+                
+                
+
+<a class="btn btn_black" href="https://t.me/vesspay_bot" target="_blank">
+
+    <span>Перейти к боту</span>  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+    </svg>
+</a>
+
+
+
+
+            </div>
+            <div class="payment-service-section__right">
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service1.png" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service2.png" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service1.png" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service2.png" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service5.png" alt="images">
+                </div>
+                
+                <div class="card ">
+                    <img src=" ./../assets/img/service6.png" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service7.png" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service1.png" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service9.png" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service1.png" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service11.png" alt="images">
+                </div>
+                
+                <div class="card hidden">
+                    <img src=" ./../assets/img/service12.png" alt="images">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="video-with-list-section section">
+
+    <div class="container">
+        <div class="video-with-list-section__content">
+            <div class="video-with-list-section__left">
+                <div class="video-wrapper">
+    <div class="video" data-video="WeXCUGqN4e8">
+        <svg width="102" height="100" viewBox="0 0 102 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50.9853" cy="50" rx="50.2963" ry="50" fill="white" fill-opacity="0.6" />
+            <path
+                d="M60.5195 46.9164C62.5195 48.0711 62.5195 50.9578 60.5195 52.1125L46.2186 60.3692C44.2186 61.5239 41.7186 60.0805 41.7186 57.7711L41.7186 41.2578C41.7186 38.9484 44.2186 37.505 46.2186 38.6597L60.5195 46.9164Z"
+                fill="#4F4F4F" />
+        </svg>
+
+    </div>
+</div>
+            </div>
+            <div class="video-with-list-section__right">
+                <h2 class="title">Как это работает?</h2>
+                <ul class="video-with-list-section__list">
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./../assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Установите приложение  <a href = "https://telegram.org">Telegram app</a>
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./../assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Зайдите в бота <a href = "https://t.me/vesspay_bot"> @vesspaybot</a>
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./../assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Выберите интересующий вас сервис
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./../assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Следуйте инструкциям в боте
+                    </li>
+                    
+
+                    <li class="video-with-list-section__list-item">
+                        <span>
+                            <img src="./../assets/img/list-icon.svg" alt="list-icon">
+                        </span>
+                        Готово! Пользуйтесь вашим любимым сервисом
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="steps-section section">
+
+    <div class="container">
+        <div class="swiper steps-section__swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+
+                    <div class="steps-section__slide steps-section-slide">
+
+                        <img class="steps-section-slide__image" src="./../assets/img/step1.svg" alt="">
+
+                        <p>Выберите сервис</p>
+
+                    </div>
+                    
+                    <span class="swiper-arrow">
+                        <img src="../assets/img/arrow-blue.svg" alt="">
+                    </span>
+                    
+                </div>
+
+                
+                <div class="swiper-slide">
+
+                    <div class="steps-section__slide steps-section-slide">
+
+                        <img class="steps-section-slide__image" src="./../assets/img/step2.svg" alt="">
+
+                        <p>Зарегистрируйте аккаунт</p>
+
+                    </div>
+                    
+                    <span class="swiper-arrow">
+                        <img src="../assets/img/arrow-blue.svg" alt="">
+                    </span>
+                    
+                </div>
+
+                
+                <div class="swiper-slide">
+
+                    <div class="steps-section__slide steps-section-slide">
+
+                        <img class="steps-section-slide__image" src="./../assets/img/step3.svg" alt="">
+
+                        <p>Пользуйтесь!</p>
+
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        
+    </div>
+</section>
+
+
+
+<section class=" banner-with-icon-section section">
+    <div class="container ">
+        <div class="banner-with-icon-section__content">
+            <div class="banner-with-icon-section__left">
+                <h2 class="banner-with-icon-section__title">Оформи подписку на сервис через VessPay и стань участником розыгрыша годовой подписки на YouTube Premium</h2>
+                
+
+<a class="btn btn_black" href="https://t.me/vesspay_bot" target="_blank">
+
+    <span>Перейти к боту</span>  <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+    </svg>
+</a>
+
+
+
+
+            </div>
+            <div class="banner-with-icon-section__right">
+                <img src="./../assets/img/big-icon.svg" alt="icon">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+  </main>
+
+
+  
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a class="footer__logo" href="./">
+                <img src="./../assets/img/logo-white.svg" alt="logo">
             </a>
 
+            <ul class="footer__nav">
+                
+                <li><a href="./payment-services">Оплата сервисов</a></li>
+                
+                <li><a href=""></a></li>
+                
+                <li><a href="./about">О компании</a></li>
+                
+            </ul>
+            
+
+<a class="btn btn_white-transperent" href="https://t.me/vesspay_bot" target="_blank">
+
+    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
+
 
 
 
         </div>
-    </header>
+        <div class="footer__bottom">
+            <div class="footer__copyright">© Vesspay, 2022</div>
+            <ul class="footer__links">
+                
 
 
+                
+                <li> <a href="mailto:info@vesspay.com">info@vesspay.com</a> </li>
+                
 
+                
 
-    <main>
 
+                
+                <li data-href="modal-term" class="modal-trigger"> Правила использованияe</li>
+                
 
-        <section class=" main-top-section">
-            <div class="container ">
-                <div class="main-top-section__content main-top-section__content-top">
-                    <div class="main-top-section__left">
-                        <div class="switch tablet" data-href='./../'>
-                            <span class="left">Eng</span><input type="checkbox" id="tablet" checked />
-                            <label for="tablet"></label>
-                            <span class="right">Rus</span>
-                        </div>
-                        <h1><span>VessPay</span> — оплачивайте популярные сервисы в один клик!</h1>
-                        <p>Покупка неограниченного количества аккаунтов на любом сервисе через Telegram бота</p>
+                
 
 
-                        <a class="btn btn_blue" href="https://t.me/vesspay_bot" target="_blank">
+                
+                <li class="projectBy_desctop"> project by <a href="http://nftworkin.com" class="link projectBy_desctop">NFTWorkin.com</a> </li>
+                
 
-                            <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                            </svg>
-                        </a>
+                
 
 
+                
+                <li data-href="modal-privacy" class="modal-trigger"> Политика конфиденциальности</li>
+                
 
+                
+            </ul>
+            
 
-                    </div>
-                    <div class="main-top-section__right">
-                        <img src="./../assets/img/animation.gif" alt="animation">
-                    </div>
-                </div>
-                <div class="main-top-section__content main-top-section__content-bottom">
+<a class="btn btn_grey" href="https://t.me/VessPay_chat" target="_blank">
 
-                    <div class="card-text-with-icon card">
-                        <img src="./../assets/img/1.svg" alt="icon">
-                        <p>Регистрация аккаунта<br>
-                            на ваши данные</p>
-                    </div>
+    <span>Поддержка в  Телеграме</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
+        </svg>
+</a>
 
-                    <div class="card-text-with-icon card">
-                        <img src="./../assets/img/2.svg" alt="icon">
-                        <p>Инструкции по вводу,<br>
-                            оплате и использованию<br>
-                            придут в телеграм</p>
-                    </div>
 
-                    <div class="card-text-with-icon card">
-                        <img src="./../assets/img/3.svg" alt="icon">
-                        <p>Безопасно и<br>
-                            конфиденциально</p>
-                    </div>
 
-                    <div class="card-text-with-icon card">
-                        <img src=" ./../assets/img/4.svg" alt="icon">
-                        <p>Круглосуточная техподдержка </p>
-                    </div>
 
-                </div>
-            </div>
-        </section>
-
-
-        <section class=" payment-service-section ">
-            <div class="container ">
-                <div class="payment-service-section__top">
-                    <div class="payment-service-section__top-title">Получи доступ уже сейчас</div>
-                </div>
-                <div class="payment-service-section__content">
-                    <div class="payment-service-section__left">
-                        <div class="payment-service-section__subtitle">
-                            к Netflix, YouTube Premium, Spotify
-                        </div>
-                        <h2>Оплата сервисов</h2>
-                        <p class="payment-service-section__text">Приобретайте подписки на зарубежные сервисы. Продление
-                            существующих аккаунтов и создание новых на любой платформе.</p>
-                        <p class="payment-service-section__subtext">Быстро и легко</p>
-
-
-
-                        <a class="btn btn_black" href="https://t.me/vesspay_bot" target="_blank">
-
-                            <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                            </svg>
-                        </a>
-
-
-
-
-                    </div>
-                    <div class="payment-service-section__right">
-
-                        <div class="card ">
-                            <img src=" ./../assets/img/service1.png" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./../assets/img/service2.png" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./../assets/img/service3.png" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./../assets/img/service4.png" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./../assets/img/service5.png" alt="images">
-                        </div>
-
-                        <div class="card ">
-                            <img src=" ./../assets/img/service6.png" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./../assets/img/service7.png" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./../assets/img/service8.png" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./../assets/img/service9.png" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./../assets/img/service10.png" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./../assets/img/service11.png" alt="images">
-                        </div>
-
-                        <div class="card hidden">
-                            <img src=" ./../assets/img/service12.png" alt="images">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="video-with-list-section section">
-
-            <div class="container">
-                <div class="video-with-list-section__content">
-                    <div class="video-with-list-section__left">
-                        <div class="video-wrapper">
-                            <div class="video" data-video="WeXCUGqN4e8">
-                                <svg width="102" height="100" viewBox="0 0 102 100" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <ellipse cx="50.9853" cy="50" rx="50.2963" ry="50" fill="white"
-                                        fill-opacity="0.6" />
-                                    <path
-                                        d="M60.5195 46.9164C62.5195 48.0711 62.5195 50.9578 60.5195 52.1125L46.2186 60.3692C44.2186 61.5239 41.7186 60.0805 41.7186 57.7711L41.7186 41.2578C41.7186 38.9484 44.2186 37.505 46.2186 38.6597L60.5195 46.9164Z"
-                                        fill="#4F4F4F" />
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video-with-list-section__right">
-                        <h2 class="title">Как это работает?</h2>
-                        <ul class="video-with-list-section__list">
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./../assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Установите приложение <a href="https://telegram.org">Telegram app</a>
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./../assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Зайдите в бота <a href="https://t.me/vesspay_bot"> @vesspaybot</a>
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./../assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Выберите интересующий вас сервис
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./../assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Следуйте инструкциям в боте
-                            </li>
-
-
-                            <li class="video-with-list-section__list-item">
-                                <span>
-                                    <img src="./../assets/img/list-icon.svg" alt="list-icon">
-                                </span>
-                                Готово! Пользуйтесь вашим любимым сервисом
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="steps-section section">
-
-            <div class="container">
-                <div class="swiper steps-section__swiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-
-                            <div class="steps-section__slide steps-section-slide">
-
-                                <img class="steps-section-slide__image" src="./../assets/img/step1.svg" alt="">
-
-                                <p>Выберите сервис</p>
-
-                            </div>
-
-                            <span class="swiper-arrow">
-                                <img src="../assets/img/arrow-blue.svg" alt="">
-                            </span>
-
-                        </div>
-
-
-                        <div class="swiper-slide">
-
-                            <div class="steps-section__slide steps-section-slide">
-
-                                <img class="steps-section-slide__image" src="./../assets/img/step2.svg" alt="">
-
-                                <p>Зарегистрируйте аккаунт</p>
-
-                            </div>
-
-                            <span class="swiper-arrow">
-                                <img src="../assets/img/arrow-blue.svg" alt="">
-                            </span>
-
-                        </div>
-
-
-                        <div class="swiper-slide">
-
-                            <div class="steps-section__slide steps-section-slide">
-
-                                <img class="steps-section-slide__image" src="./../assets/img/step3.svg" alt="">
-
-                                <p>Пользуйтесь!</p>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </section>
-
-
-        <section class=" payment-icons-section section">
-            <div class="container ">
-
-                <h2 class="payment-icons-section__title">Мы работаем со всеми популярными <br> платежными сервисами</h2>
-
-                <div class="payment-icons-section__content">
-
-                    <div class="card ">
-                        <img src="./../assets/img/payment2.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./../assets/img/payment3.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./../assets/img/payment1.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./../assets/img/payment4.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./../assets/img/payment5.svg" alt="icon">
-                    </div>
-
-                    <div class="card ">
-                        <img src="./../assets/img/payment6.svg" alt="icon">
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-
-        <section class=" banner-with-icon-section section">
-            <div class="container ">
-                <div class="banner-with-icon-section__content">
-                    <div class="banner-with-icon-section__left">
-                        <h2 class="banner-with-icon-section__title">Оформи подписку на сервис через VessPay и стань
-                            участником розыгрыша годовой подписки на YouTube Premium</h2>
-
-
-                        <a class="btn btn_black" href="https://t.me/vesspay_bot" target="_blank">
-
-                            <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                            </svg>
-                        </a>
-
-
-
-
-                    </div>
-                    <div class="banner-with-icon-section__right">
-                        <img src="./../assets/img/big-icon.svg" alt="icon">
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-    </main>
-
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <a class="footer__logo" href="./">
-                    <img src="./../assets/img/logo-white.svg" alt="logo">
-                </a>
-
-                <ul class="footer__nav">
-
-                    <li><a href="./payment-services">Оплата сервисов</a></li>
-
-                    <li><a href=""></a></li>
-
-                    <li><a href="./about">О компании</a></li>
-
-                </ul>
-
-
-                <a class="btn btn_white-transperent" href="https://t.me/vesspay_bot" target="_blank">
-
-                    <span>Перейти к боту</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                    </svg>
-                </a>
-
-
-
-
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__copyright">© Vesspay, 2022</div>
-                <ul class="footer__links">
-
-
-
-
-                    <li> <a href="mailto:info@vesspay.com">info@vesspay.com</a> </li>
-
-
-
-
-
-
-                    <li data-href="modal-term" class="modal-trigger"> Правила использованияe</li>
-
-
-
-
-
-
-                    <li class="projectBy_desctop"> project by <a href="http://nftworkin.com"
-                            class="link projectBy_desctop">NFTWorkin.com</a> </li>
-
-
-
-
-
-
-                    <li data-href="modal-privacy" class="modal-trigger"> Политика конфиденциальности</li>
-
-
-
-                </ul>
-
-
-                <a class="btn btn_grey" href="https://t.me/VessPay_chat" target="_blank">
-
-                    <span>Поддержка в Телеграме</span> <svg width="21" height="18" viewBox="0 0 21 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.91512 7.80784C8.19912 5.04334 16.3311 1.67284 17.4536 1.20634C20.3981 -0.0146596 21.3016 0.21934 20.8511 2.92334C20.5276 4.86684 19.5941 11.3013 18.8501 15.3063C18.4086 17.6813 17.4181 17.9628 15.8606 16.9353C15.1116 16.4408 11.3311 13.9408 10.5106 13.3538C9.76162 12.8188 8.72862 12.1753 10.0241 10.9078C10.4851 10.4563 13.5071 7.57084 15.8616 5.32484C16.1701 5.02984 15.7826 4.54534 15.4266 4.78184C12.2531 6.88634 7.85312 9.80734 7.29312 10.1878C6.44712 10.7623 5.63462 11.0258 4.17612 10.6068C3.07412 10.2903 1.99762 9.91284 1.57862 9.76884C-0.0348845 9.21484 0.348115 8.49734 1.91512 7.80784Z" />
-                    </svg>
-                </a>
-
-
-
-
-                <div class="footer__projectBy">
-                    project by <a href="http://nftworkin.com">NFTWorkin.com</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="termOfUse modal">
-        <div class="content">
-            <div class="top">
-                <div class="close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_b_1278_6894)">
-                            <rect width="40" height="40" rx="20" fill="#F4F7FF" />
-                            <path d="M15.2737 24.4777L24.3808 15.1768" stroke="#2F80ED" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M15.1766 15.2737L24.4775 24.3808" stroke="#2F80ED" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_b_1278_6894" x="-12" y="-12" width="64" height="64"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feGaussianBlur in="BackgroundImage" stdDeviation="6" />
-                                <feComposite in2="SourceAlpha" operator="in"
-                                    result="effect1_backgroundBlur_1278_6894" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1278_6894"
-                                    result="shape" />
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
-            <div class="wrapper-text">
-                <h2>Website Terms of Use</h2>
-                <div class="subtitle">Version 1.0</div>
-
-                <div class="text">
-                    <p>The VessPay website located at VessPay.com is a copyrighted work belonging to VessPay. Certain
-                        features of the Site may be subject to additional guidelines, terms, or rules, which will be
-                        posted on the Site in connection with such features.<br>
-                        All such additional terms, guidelines, and rules are incorporated by reference into these Terms.
-                        These Terms of Use described the legally binding terms and conditions that oversee your use of
-                        the Site. BY LOGGING INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE TERMS and you represent
-                        that you have the authority and capacity to enter into these Terms. YOU SHOULD BE AT LEAST 18
-                        YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL OF THE PROVISION OF THESE TERMS, DO
-                        NOT LOG INTO AND/OR USE THE SITE.</P>
-
-                    <p>These terms require the use of arbitration Section 10.2 on an individual basis to resolve
-                        disputes and also limit the remedies available to you in the event of a dispute. These Terms of
-                        Use were created with the help of the Terms Of Use Generator. </p>
-
-
-                    <h3>Access to the Site</h3>
-
-                    <p><span>Subject to these Terms.</span> Company grants you a non-transferable, non-exclusive,
-                        revocable, limited license to access the Site solely for your own personal, noncommercial use.
-                    </p>
-                    <p><span>Certain Restrictions.</span> The rights approved to you in these Terms are subject to the
-                        following restrictions: (a) you shall not sell, rent, lease, transfer, assign, distribute, host,
-                        or otherwise commercially exploit the Site; (b) you shall not change, make derivative works of,
-                        disassemble, reverse compile or reverse engineer any part of the Site; (c) you shall not access
-                        the Site in order to build a similar or competitive website; and (d) except as expressly stated
-                        herein, no part of the Site may be copied, reproduced, distributed, republished, downloaded,
-                        displayed, posted or transmitted in any form or by any means unless otherwise indicated, any
-                        future release, update, or other addition to functionality of the Site shall be subject to these
-                        Terms. All copyright and other proprietary notices on the Site must be retained on all copies
-                        thereof. </p>
-
-
-                    <p>Company reserves the right to change, suspend, or cease the Site with or without notice to you.
-                        You approved that Company will not be held liable to you or any third-party for any change,
-                        interruption, or termination of the Site or any part.
-                    </p>
-                    <p><span>No Support or Maintenance.</span> You agree that Company will have no obligation to provide
-                        you with any support in connection with the Site.<br>
-                        Excluding any User Content that you may provide, you are aware that all the intellectual
-                        property rights, including copyrights, patents, trademarks, and trade secrets, in the Site and
-                        its content are owned by Company or Company’s suppliers. Note that these Terms and access to the
-                        Site do not give you any rights, title or interest in or to any intellectual property rights,
-                        except for the limited access rights expressed in Section 2.1. Company and its suppliers reserve
-                        all rights not granted in these Terms. </p>
-
-
-                    <h3>Third-Party Links & Ads; Other Users
-
-                        Third-Party Links & Ads.</h3>
-                    <p>The Site may contain links to third-party websites and services, and/or display advertisements
-                        for third-parties. Such Third-Party Links & Ads are not under the control of Company, and
-                        Company is not responsible for any Third-Party Links & Ads. Company provides access to these
-                        Third-Party Links & Ads only as a convenience to you, and does not review, approve, monitor,
-                        endorse, warrant, or make any representations with respect to Third-Party Links & Ads. You use
-                        all Third-Party Links & Ads at your own risk, and should apply a suitable level of caution and
-                        discretion in doing so. When you click on any of the Third-Party Links & Ads, the applicable
-                        third party’s terms and policies apply, including the third party’s privacy and data gathering
-                        practices</p>
-
-                    <p><span>Other Users.</span> Each Site user is solely responsible for any and all of its own User
-                        Content. Because we do not control User Content, you acknowledge and agree that we are not
-                        responsible for any User Content, whether provided by you or by others. You agree that Company
-                        will not be responsible for any loss or damage incurred as the result of any such interactions.
-                        If there is a dispute between you and any Site user, we are under no obligation to become
-                        involved.</p>
-
-                    <p>You hereby release and forever discharge the Company and our officers, employees, agents,
-                        successors, and assigns from, and hereby waive and relinquish, each and every past, present and
-                        future dispute, claim, controversy, demand, right, obligation, liability, action and cause of
-                        action of every kind and nature, that has arisen or arises directly or indirectly out of, or
-                        that relates directly or indirectly to, the Site. If you are a California resident, you hereby
-                        waive California civil code section 1542 in connection with the foregoing, which states: "a
-                        general release does not extend to claims which the creditor does not know or suspect to exist
-                        in his or her favor at the time of executing the release, which if known by him or her must have
-                        materially affected his or her settlement with the debtor." </p>
-
-                    <p><span>Cookies and Web Beacons.</span> Like any other website, VessPay uses ‘cookies’. These
-                        cookies are used to store information including visitors’ preferences, and the pages on the
-                        website that the visitor accessed or visited. The information is used to optimize the users’
-                        experience by customizing our web page content based on visitors’ browser type and/or other
-                        information. </p>
-
-
-                    <h3>Disclaimers</h3>
-
-                    <p>The site is provided on an "as-is" and "as available" basis, and company and our suppliers
-                        expressly disclaim any and all warranties and conditions of any kind, whether express, implied,
-                        or statutory, including all warranties or conditions of merchantability, fitness for a
-                        particular purpose, title, quiet enjoyment, accuracy, or non-infringement. We and our suppliers
-                        make not guarantee that the site will meet your requirements, will be available on an
-                        uninterrupted, timely, secure, or error-free basis, or will be accurate, reliable, free of
-                        viruses or other harmful code, complete, legal, or safe. If applicable law requires any
-                        warranties with respect to the site, all such warranties are limited in duration to ninety (90)
-                        days from the date of first use.<br>
-                        Some jurisdictions do not allow the exclusion of implied warranties, so the above exclusion may
-                        not apply to you. Some jurisdictions do not allow limitations on how long an implied warranty
-                        lasts, so the above limitation may not apply to you. </p>
-
-
-                    <h3>Limitation on Liability</h3>
-
-                    <p>To the maximum extent permitted by law, in no event shall company or our suppliers be liable to
-                        you or any third-party for any lost profits, lost data, costs of procurement of substitute
-                        products, or any indirect, consequential, exemplary, incidental, special or punitive damages
-                        arising from or relating to these terms or your use of, or incapability to use the site even if
-                        company has been advised of the possibility of such damages. Access to and use of the site is at
-                        your own discretion and risk, and you will be solely responsible for any damage to your device
-                        or computer system, or loss of data resulting therefrom</p>
-
-                    <p>To the maximum extent permitted by law, notwithstanding anything to the contrary contained
-                        herein, our liability to you for any damages arising from or related to this agreement, will at
-                        all times be limited to a maximum of fifty U.S. dollars (u.s. $50). The existence of more than
-                        one claim will not enlarge this limit. You agree that our suppliers will have no liability of
-                        any kind arising from or relating to this agreement.</p>
-
-                    <p>Some jurisdictions do not allow the limitation or exclusion of liability for incidental or
-                        consequential damages, so the above limitation or exclusion may not apply to you. </p>
-
-                    <p><span>Term and Termination.</span> Subject to this Section, these Terms will remain in full force
-                        and effect while you use the Site. We may suspend or terminate your rights to use the Site at
-                        any time for any reason at our sole discretion, including for any use of the Site in violation
-                        of these Terms. Upon termination of your rights under these Terms, your Account and right to
-                        access and use the Site will terminate immediately. You understand that any termination of your
-                        Account may involve deletion of your User Content associated with your Account from our live
-                        databases. Company will not have any liability whatsoever to you for any termination of your
-                        rights under these Terms. Even after your rights under these Terms are terminated, the following
-                        provisions of these Terms will remain in effect: Sections 2 through 2.5, Section 3 and Sections
-                        4 through 10. </p>
-
-
-                    <h3>Copyright Policy.</h3>
-
-                    <p>Company respects the intellectual property of others and asks that users of our Site do the same.
-                        In connection with our Site, we have adopted and implemented a policy respecting copyright law
-                        that provides for the removal of any infringing materials and for the termination of users of
-                        our online Site who are repeated infringers of intellectual property rights, including
-                        copyrights. If you believe that one of our users is, through the use of our Site, unlawfully
-                        infringing the copyright(s) in a work, and wish to have the allegedly infringing material
-                        removed, the following information in the form of a written notification (pursuant to 17 U.S.C.
-                        § 512(c)) must be provided to our designated <br>Copyright Agent:
-                    <ul>
-                        <li>your physical or electronic signature; </li>
-                        <li>identification of the copyrighted work(s) that you claim to have been infringed; </li>
-                        <li>identification of the material on our services that you claim is infringing and that you
-                            request us to remove; </li>
-                        <li>sufficient information to permit us to locate such material; </li>
-                        <li>your address, telephone number, and e-mail address; </li>
-                        <li>a statement that you have a good faith belief that use of the objectionable material is not
-                            authorized by the copyright owner, its agent, or under the law; </li>
-                        <li>a statement that the information in the notification is accurate, and under penalty of
-                            perjury, that you are either the owner of the copyright that has allegedly been infringed or
-                            that you are authorized to act on behalf of the copyright owner. </li>
-                    </ul>
-                    Please note that, pursuant to 17 U.S.C. § 512(f), any misrepresentation of material fact in a
-                    written notification automatically subjects the complaining party to liability for any damages,
-                    costs and attorney’s fees incurred by us in connection with the written notification and allegation
-                    of copyright infringement. </p>
-
-
-                    <h3>General</h3>
-
-                    <p>These Terms are subject to occasional revision, and if we make any substantial changes, we may
-                        notify you by sending you an e-mail to the last e-mail address you provided to us and/or by
-                        prominently posting notice of the changes on our Site. You are responsible for providing us with
-                        your most current e-mail address. In the event that the last e-mail address that you have
-                        provided us is not valid our dispatch of the e-mail containing such notice will nonetheless
-                        constitute effective notice of the changes described in the notice. Any changes to these Terms
-                        will be effective upon the earliest of thirty (30) calendar days following our dispatch of an
-                        e-mail notice to you or thirty (30) calendar days following our posting of notice of the changes
-                        on our Site. These changes will be effective immediately for new users of our Site. Continued
-                        use of our Site following notice of such changes shall indicate your acknowledgement of such
-                        changes and agreement to be bound by the terms and conditions of such changes. Dispute
-                        Resolution. Please read this Arbitration Agreement carefully. It is part of your contract with
-                        Company and affects your rights. It contains procedures for MANDATORY BINDING ARBITRATION AND A
-                        CLASS ACTION WAIVER. </p>
-
-                    <p><span>Applicability of Arbitration Agreement. </span> All claims and disputes in connection with
-                        the Terms or the use of any product or service provided by the Company that cannot be resolved
-                        informally or in small claims court shall be resolved by binding arbitration on an individual
-                        basis under the terms of this Arbitration Agreement. Unless otherwise agreed to, all arbitration
-                        proceedings shall be held in English. This Arbitration Agreement applies to you and the Company,
-                        and to any subsidiaries, affiliates, agents, employees, predecessors in interest, successors,
-                        and assigns, as well as all authorized or unauthorized users or beneficiaries of services or
-                        goods provided under the Terms. </p>
-
-                    <p><span>Notice Requirement and Informal Dispute Resolution.</span> Before either party may seek
-                        arbitration, the party must first send to the other party a written Notice of Dispute describing
-                        the nature and basis of the claim or dispute, and the requested relief. A Notice to the Company
-                        should be sent to: Vesspay.com. After the Notice is received, you and the Company may attempt to
-                        resolve the claim or dispute informally. If you and the Company do not resolve the claim or
-                        dispute within thirty (30) days after the Notice is received, either party may begin an
-                        arbitration proceeding. The amount of any settlement offer made by any party may not be
-                        disclosed to the arbitrator until after the arbitrator has determined the amount of the award to
-                        which either party is entitled.<br>
-                        <span>Arbitration Rules.</span> Arbitration shall be initiated through the American Arbitration
-                        Association, an established alternative dispute resolution provider that offers arbitration as
-                        set forth in this section. If AAA is not available to arbitrate, the parties shall agree to
-                        select an alternative ADR Provider. The rules of the ADR Provider shall govern all aspects of
-                        the arbitration except to the extent such rules are in conflict with the Terms. The AAA Consumer
-                        Arbitration Rules governing the arbitration are available online at adr.org or by calling the
-                        AAA at 1-800-778-7879. The arbitration shall be conducted by a single, neutral arbitrator. Any
-                        claims or disputes where the total amount of the award sought is less than Ten Thousand U.S.
-                        Dollars (US $10,000.00) may be resolved through binding non-appearance-based arbitration, at the
-                        option of the party seeking relief. For claims or disputes where the total amount of the award
-                        sought is Ten Thousand U.S. Dollars (US $10,000.00) or more, the right to a hearing will be
-                        determined by the Arbitration Rules. Any hearing will be held in a location within 100 miles of
-                        your residence, unless you reside outside of the United States, and unless the parties agree
-                        otherwise. If you reside outside of the U.S., the arbitrator shall give the parties reasonable
-                        notice of the date, time and place of any oral hearings. Any judgment on the award rendered by
-                        the arbitrator may be entered in any court of competent jurisdiction. If the arbitrator grants
-                        you an award that is greater than the last settlement offer that the Company made to you prior
-                        to the initiation of arbitration, the Company will pay you the greater of the award or
-                        $2,500.00. Each party shall bear its own costs and disbursements arising out of the arbitration
-                        and shall pay an equal share of the fees and costs of the ADR Provider.
-                    </p>
-
-                    <p><span>Additional Rules for Non-Appearance Based Arbitration.</span> If non-appearance based
-                        arbitration is elected, the arbitration shall be conducted by telephone, online and/or based
-                        solely on written submissions; the specific manner shall be chosen by the party initiating the
-                        arbitration. The arbitration shall not involve any personal appearance by the parties or
-                        witnesses unless otherwise agreed by the parties. </p>
-
-                    <p><span>Time Limits.</span> If you or the Company pursues arbitration, the arbitration action must
-                        be initiated and/or demanded within the statute of limitations and within any deadline imposed
-                        under the AAA Rules for the pertinent claim. </p>
-
-                    <p><span>Authority of Arbitrator.</span> If arbitration is initiated, the arbitrator will decide the
-                        rights and liabilities of you and the Company, and the dispute will not be consolidated with any
-                        other matters or joined with any other cases or parties. The arbitrator shall have the authority
-                        to grant motions dispositive of all or part of any claim. The arbitrator shall have the
-                        authority to award monetary damages, and to grant any non-monetary remedy or relief available to
-                        an individual under applicable law, the AAA Rules, and the Terms. The arbitrator shall issue a
-                        written award and statement of decision describing the essential findings and conclusions on
-                        which the award is based. The arbitrator has the same authority to award relief on an individual
-                        basis that a judge in a court of law would have. The award of the arbitrator is final and
-                        binding upon you and the Company. </p>
-
-                    <p><span>Waiver of Jury Trial. </span> THE PARTIES HEREBY WAIVE THEIR CONSTITUTIONAL AND STATUTORY
-                        RIGHTS TO GO TO COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY, instead electing that all
-                        claims and disputes shall be resolved by arbitration under this Arbitration Agreement.
-                        Arbitration procedures are typically more limited, more efficient and less expensive than rules
-                        applicable in a court and are subject to very limited review by a court. In the event any
-                        litigation should arise between you and the Company in any state or federal court in a suit to
-                        vacate or enforce an arbitration award or otherwise, YOU AND THE COMPANY WAIVE ALL RIGHTS TO A
-                        JURY TRIAL, instead electing that the dispute be resolved by a judge. </p>
-
-                    <p><span>Waiver of Class or Consolidated Actions.</span> All claims and disputes within the scope of
-                        this arbitration agreement must be arbitrated or litigated on an individual basis and not on a
-                        class basis, and claims of more than one customer or user cannot be arbitrated or litigated
-                        jointly or consolidated with those of any other customer or user.<br>
-                        Confidentiality. All aspects of the arbitration proceeding shall be strictly confidential. The
-                        parties agree to maintain confidentiality unless otherwise required by law. This paragraph shall
-                        not prevent a party from submitting to a court of law any information necessary to enforce this
-                        Agreement, to enforce an arbitration award, or to seek injunctive or equitable relief. </p>
-
-                    <p><span>Severability. </span> If any part or parts of this Arbitration Agreement are found under
-                        the law to be invalid or unenforceable by a court of competent jurisdiction, then such specific
-                        part or parts shall be of no force and effect and shall be severed and the remainder of the
-                        Agreement shall continue in full force and effect. </p>
-
-                    <p><span>Right to Waive.</span> Any or all of the rights and limitations set forth in this
-                        Arbitration Agreement may be waived by the party against whom the claim is asserted. Such waiver
-                        shall not waive or affect any other portion of this Arbitration Agreement.
-                        Survival of Agreement. This Arbitration Agreement will survive the termination of your
-                        relationship with Company.</p>
-
-                    <p><span>Small Claims Court.</span> Nonetheless the foregoing, either you or the Company may bring
-                        an individual action in small claims court.
-                        Emergency Equitable Relief. Anyhow the foregoing, either party may seek emergency equitable
-                        relief before a state or federal court in order to maintain the status quo pending arbitration.
-                        A request for interim measures shall not be deemed a waiver of any other rights or obligations
-                        under this Arbitration Agreement. </p>
-
-                    <p><span>Claims Not Subject to Arbitration. </span>Notwithstanding the foregoing, claims of
-                        defamation, violation of the Computer Fraud and Abuse Act, and infringement or misappropriation
-                        of the other party’s patent, copyright, trademark or trade secrets shall not be subject to this
-                        Arbitration Agreement.
-                    </p>
-                    <p>In any circumstances where the foregoing Arbitration Agreement permits the parties to litigate in
-                        court, the parties hereby agree to submit to the personal jurisdiction of the courts located
-                        within Netherlands County, California, for such purposes.
-                    </p>
-                    <p>The Site may be subject to U.S. export control laws and may be subject to export or import
-                        regulations in other countries. You agree not to export, re-export, or transfer, directly or
-                        indirectly, any U.S. technical data acquired from Company, or any products utilizing such data,
-                        in violation of the United States export laws or regulations.
-                    </p>
-                    <p>Company is located at the address in Section 10.8. If you are a California resident, you may
-                        report complaints to the Complaint Assistance Unit of the Division of Consumer Product of the
-                        California Department of Consumer Affairs by contacting them in writing at 400 R Street,
-                        Sacramento, CA 95814, or by telephone at (800) 952-5210.
-                    </p>
-                    <p><span>Electronic Communications.</span> The communications between you and Company use electronic
-                        means, whether you use the Site or send us emails, or whether Company posts notices on the Site
-                        or communicates with you via email. For contractual purposes, you (a) consent to receive
-                        communications from Company in an electronic form; and (b) agree that all terms and conditions,
-                        agreements, notices, disclosures, and other communications that Company provides to you
-                        electronically satisfy any legal obligation that such communications would satisfy if it were be
-                        in a hard copy writing.
-                    </p>
-                    <p><span>Entire Terms.</span> These Terms constitute the entire agreement between you and us
-                        regarding the use of the Site. Our failure to exercise or enforce any right or provision of
-                        these Terms shall not operate as a waiver of such right or provision. The section titles in
-                        these Terms are for convenience only and have no legal or contractual effect. The word
-                        "including" means "including without limitation". If any provision of these Terms is held to be
-                        invalid or unenforceable, the other provisions of these Terms will be unimpaired and the invalid
-                        or unenforceable provision will be deemed modified so that it is valid and enforceable to the
-                        maximum extent permitted by law. Your relationship to Company is that of an independent
-                        contractor, and neither party is an agent or partner of the other. These Terms, and your rights
-                        and obligations herein, may not be assigned, subcontracted, delegated, or otherwise transferred
-                        by you without Company’s prior written consent, and any attempted assignment, subcontract,
-                        delegation, or transfer in violation of the foregoing will be null and void. Company may freely
-                        assign these Terms. The terms and conditions set forth in these Terms shall be binding upon
-                        assignees. </p>
-
-                    <p><span>Your Privacy.</span> Please read our Privacy Policy. </p>
-
-
-                    <p><span>Copyright/Trademark Information. Copyright ©.</span> All rights reserved. All trademarks,
-                        logos and service marks displayed on the Site are our property or the property of other
-                        third-parties. You are not permitted to use these Marks without our prior written consent or the
-                        consent of such third party which may own the Marks.
-                    </p>
-
-                    <p>Contact Information</p>
-
-                    <p>Address: <a href='vesspay.com'>Vesspay.com</a></p>
-
-
-                </div>
+            <div class="footer__projectBy">
+                project by <a href="http://nftworkin.com">NFTWorkin.com</a>
             </div>
         </div>
     </div>
-    <div class="privacyPolice modal">
-        <div class="content">
-            <div class="top">
-                <div class="close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_b_1278_6894)">
-                            <rect width="40" height="40" rx="20" fill="#F4F7FF" />
-                            <path d="M15.2737 24.4777L24.3808 15.1768" stroke="#2F80ED" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M15.1766 15.2737L24.4775 24.3808" stroke="#2F80ED" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_b_1278_6894" x="-12" y="-12" width="64" height="64"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feGaussianBlur in="BackgroundImage" stdDeviation="6" />
-                                <feComposite in2="SourceAlpha" operator="in"
-                                    result="effect1_backgroundBlur_1278_6894" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1278_6894"
-                                    result="shape" />
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
-            <div class="wrapper-text">
-                <div class="text">
-                    <p>At VessPay, accessible from VessPay.com, one of our main priorities is the privacy of our
-                        visitors. This Privacy Policy document contains types of information that is collected and
-                        recorded by VessPay and how we use it.
-                        If you have additional questions or require more information about our Privacy Policy, do not
-                        hesitate to contact us.
-                        This Privacy Policy applies only to our online activities and is valid for visitors to our
-                        website with regards to the information that they shared and/or collect in VessPay. This policy
-                        is not applicable to any information collected offline or via channels other than this website.
-                        Consent
-                        By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-
-
-                    <h3>Information we collect</h3>
-
-                    <p>The personal information that you are asked to provide, and the reasons why you are asked to
-                        provide it, will be made clear to you at the point we ask you to provide your personal
-                        information.
-                        If you contact us directly, we may receive additional information about you such as your name,
-                        email address, phone number, the contents of the message and/or attachments you may send us, and
-                        any other information you may choose to provide.
-                        When you register for an Account, we may ask for your contact information, including items such
-                        as name, company name, address, email address, and telephone number. </p>
-
-
-                    <h3>How we use your information</h3>
-
-                    <p>We use the information we collect in various ways, including to:</p>
-                    <ul>
-                        <li>Provide, operate, and maintain our website</li>
-                        <li>Improve, personalize, and expand our website</li>
-                        <li>Understand and analyze how you use our website</li>
-                        <li>Develop new products, services, features, and functionality</li>
-                        <li>Communicate with you, either directly or through one of our partners, including for customer
-                            service, to provide you with updates and other information relating to the website, and for
-                            marketing and promotional purposes</li>
-                        <li>Send you emails</li>
-                        <li>Find and prevent fraud</li>
-                    </ul>
-
-                    <h3>Log Files</h3>
-
-                    <p>VessPay follows a standard procedure of using log files. These files log visitors when they visit
-                        websites. All hosting companies do this and a part of hosting services' analytics. The
-                        information collected by log files include internet protocol (IP) addresses, browser type,
-                        Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the
-                        number of clicks. These are not linked to any information that is personally identifiable. The
-                        purpose of the information is for analyzing trends, administering the site, tracking users'
-                        movement on the website, and gathering demographic information.</p>
-
-
-                    <h3>Cookies and Web Beacons</h3>
-
-                    <p>Like any other website, VessPay uses 'cookies'. These cookies are used to store information
-                        including visitors' preferences, and the pages on the website that the visitor accessed or
-                        visited. The information is used to optimize the users' experience by customizing our web page
-                        content based on visitors' browser type and/or other information.</p>
-
-
-                    <h3>Advertising Partners Privacy Policies</h3>
-
-                    <p>You may consult this list to find the Privacy Policy for each of the advertising partners of
-                        VessPay.
-                        Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons
-                        that are used in their respective advertisements and links that appear on VessPay, which are
-                        sent directly to users' browser. They automatically receive your IP address when this occurs.
-                        These technologies are used to measure the effectiveness of their advertising campaigns and/or
-                        to personalize the advertising content that you see on websites that you visit.<br>
-                        Note that VessPay has no access to or control over these cookies that are used by third-party
-                        advertisers.</p>
-
-
-                    <h3>Third Party Privacy Policies</h3>
-
-                    <p>VessPay's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising
-                        you to consult the respective Privacy Policies of these third-party ad servers for more detailed
-                        information. It may include their practices and instructions about how to opt-out of certain
-                        options.
-                        You can choose to disable cookies through your individual browser options. To know more detailed
-                        information about cookie management with specific web browsers, it can be found at the browsers'
-                        respective websites.</p>
-
-
-                    <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
-
-                    <p>Under the CCPA, among other rights, California consumers have the right to:
-                        Request that a business that collects a consumer's personal data disclose the categories and
-                        specific pieces of personal data that a business has collected about consumers.
-                        Request that a business delete any personal data about the consumer that a business has
-                        collected.
-                        Request that a business that sells a consumer's personal data, not sell the consumer's personal
-                        data.
-                        If you make a request, we have one month to respond to you. If you would like to exercise any of
-                        these rights, please contact us.</p>
-
-
-                    <h3>GDPR Data Protection Rights</h3>
-
-                    <p>We would like to make sure you are fully aware of all of your data protection rights. Every user
-                        is entitled to the following:<br>
-                        The right to access – You have the right to request copies of your personal data. We may charge
-                        you a small fee for this service.<br>
-                        The right to rectification – You have the right to request that we correct any information you
-                        believe is inaccurate. You also have the right to request that we complete the information you
-                        believe is incomplete.<br>
-                        The right to erasure – You have the right to request that we erase your personal data, under
-                        certain conditions.
-                        The right to restrict processing – You have the right to request that we restrict the processing
-                        of your personal data, under certain conditions.
-                        The right to object to processing – You have the right to object to our processing of your
-                        personal data, under certain conditions.<br>
-                        The right to data portability – You have the right to request that we transfer the data that we
-                        have collected to another organization, or directly to you, under certain conditions.
-                        If you make a request, we have one month to respond to you. If you would like to exercise any of
-                        these rights, please contact us.</p>
-
-
-                    <h3>Children's Information</h3>
-
-                    <p>Another part of our priority is adding protection for children while using the internet. We
-                        encourage parents and guardians to observe, participate in, and/or monitor and guide their
-                        online activity.
-                        VessPay does not knowingly collect any Personal Identifiable Information from children under the
-                        age of 13. If you think that your child provided this kind of information on our website, we
-                        strongly encourage you to contact us immediately and we will do our best efforts to promptly
-                        remove such information from our records.</p>
-
-                </div>
+</footer>
+<div class="termOfUse modal">
+    <div class="content">
+        <div class="top">
+            <div class="close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_b_1278_6894)">
+                        <rect width="40" height="40" rx="20" fill="#F4F7FF" />
+                        <path d="M15.2737 24.4777L24.3808 15.1768" stroke="#2F80ED" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.1766 15.2737L24.4775 24.3808" stroke="#2F80ED" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_1278_6894" x="-12" y="-12" width="64" height="64"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feGaussianBlur in="BackgroundImage" stdDeviation="6" />
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1278_6894" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1278_6894"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
             </div>
         </div>
+        <div class="wrapper-text">
+            <h2>Website Terms of Use</h2>
+            <div class="subtitle">Version 1.0</div>
+
+            <div class="text">
+      <p>The VessPay website located at VessPay.com is a copyrighted work belonging to VessPay. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.<br>
+      All such additional terms, guidelines, and rules are incorporated by reference into these Terms.
+      These Terms of Use described the legally binding terms and conditions that oversee your use of the Site. BY LOGGING INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE TERMS and you represent that you have the authority and capacity to enter into these Terms. YOU SHOULD BE AT LEAST 18 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL OF THE PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR USE THE SITE.</P> 
+      
+      <p>These terms require the use of arbitration Section 10.2 on an individual basis to resolve disputes and also limit the remedies available to you in the event of a dispute. These Terms of Use were created with the help of the Terms Of Use Generator. </p>
+      
+      
+      <h3>Access to the Site</h3>
+      
+      <p><span>Subject to these Terms.</span>  Company grants you a non-transferable, non-exclusive, revocable, limited license to access the Site solely for your own personal, noncommercial use.
+      </p>
+      <p><span>Certain Restrictions.</span>  The rights approved to you in these Terms are subject to the following restrictions: (a) you shall not sell, rent, lease, transfer, assign, distribute, host, or otherwise commercially exploit the Site; (b) you shall not change, make derivative works of, disassemble, reverse compile or reverse engineer any part of the Site; (c) you shall not access the Site in order to build a similar or competitive website; and (d) except as expressly stated herein, no part of the Site may be copied, reproduced, distributed, republished, downloaded, displayed, posted or transmitted in any form or by any means unless otherwise indicated, any future release, update, or other addition to functionality of the Site shall be subject to these Terms. All copyright and other proprietary notices on the Site must be retained on all copies thereof. </p>
+      
+      
+      <p>Company reserves the right to change, suspend, or cease the Site with or without notice to you. You approved that Company will not be held liable to you or any third-party for any change, interruption, or termination of the Site or any part.
+      </p>
+      <p><span>No Support or Maintenance.</span>  You agree that Company will have no obligation to provide you with any support in connection with the Site.<br>
+      Excluding any User Content that you may provide, you are aware that all the intellectual property rights, including copyrights, patents, trademarks, and trade secrets, in the Site and its content are owned by Company or Company’s suppliers. Note that these Terms and access to the Site do not give you any rights, title or interest in or to any intellectual property rights, except for the limited access rights expressed in Section 2.1. Company and its suppliers reserve all rights not granted in these Terms. </p>
+      
+      
+      <h3>Third-Party Links & Ads; Other Users
+      
+      Third-Party Links & Ads.</h3> 
+      <p>The Site may contain links to third-party websites and services, and/or display advertisements for third-parties. Such Third-Party Links & Ads are not under the control of Company, and Company is not responsible for any Third-Party Links & Ads. Company provides access to these Third-Party Links & Ads only as a convenience to you, and does not review, approve, monitor, endorse, warrant, or make any representations with respect to Third-Party Links & Ads. You use all Third-Party Links & Ads at your own risk, and should apply a suitable level of caution and discretion in doing so. When you click on any of the Third-Party Links & Ads, the applicable third party’s terms and policies apply, including the third party’s privacy and data gathering practices</p>
+      
+      <p><span>Other Users.</span> Each Site user is solely responsible for any and all of its own User Content. Because we do not control User Content, you acknowledge and agree that we are not responsible for any User Content, whether provided by you or by others. You agree that Company will not be responsible for any loss or damage incurred as the result of any such interactions. If there is a dispute between you and any Site user, we are under no obligation to become involved.</p>
+      
+      <p>You hereby release and forever discharge the Company and our officers, employees, agents, successors, and assigns from, and hereby waive and relinquish, each and every past, present and future dispute, claim, controversy, demand, right, obligation, liability, action and cause of action of every kind and nature, that has arisen or arises directly or indirectly out of, or that relates directly or indirectly to, the Site. If you are a California resident, you hereby waive California civil code section 1542 in connection with the foregoing, which states: "a general release does not extend to claims which the creditor does not know or suspect to exist in his or her favor at the time of executing the release, which if known by him or her must have materially affected his or her settlement with the debtor." </p>
+      
+      <p><span>Cookies and Web Beacons.</span>  Like any other website, VessPay uses ‘cookies’. These cookies are used to store information including visitors’ preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users’ experience by customizing our web page content based on visitors’ browser type and/or other information. </p>
+      
+      
+      <h3>Disclaimers</h3>
+      
+      <p>The site is provided on an "as-is" and "as available" basis, and company and our suppliers expressly disclaim any and all warranties and conditions of any kind, whether express, implied, or statutory, including all warranties or conditions of merchantability, fitness for a particular purpose, title, quiet enjoyment, accuracy, or non-infringement. We and our suppliers make not guarantee that the site will meet your requirements, will be available on an uninterrupted, timely, secure, or error-free basis, or will be accurate, reliable, free of viruses or other harmful code, complete, legal, or safe. If applicable law requires any warranties with respect to the site, all such warranties are limited in duration to ninety (90) days from the date of first use.<br>
+      Some jurisdictions do not allow the exclusion of implied warranties, so the above exclusion may not apply to you. Some jurisdictions do not allow limitations on how long an implied warranty lasts, so the above limitation may not apply to you. </p>
+      
+      
+      <h3>Limitation on Liability</h3>
+      
+      <p>To the maximum extent permitted by law, in no event shall company or our suppliers be liable to you or any third-party for any lost profits, lost data, costs of procurement of substitute products, or any indirect, consequential, exemplary, incidental, special or punitive damages arising from or relating to these terms or your use of, or incapability to use the site even if company has been advised of the possibility of such damages. Access to and use of the site is at your own discretion and risk, and you will be solely responsible for any damage to your device or computer system, or loss of data resulting therefrom</p>
+      
+      <p>To the maximum extent permitted by law, notwithstanding anything to the contrary contained herein, our liability to you for any damages arising from or related to this agreement, will at all times be limited to a maximum of fifty U.S. dollars (u.s. $50). The existence of more than one claim will not enlarge this limit. You agree that our suppliers will have no liability of any kind arising from or relating to this agreement.</p>
+      
+      <p>Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, so the above limitation or exclusion may not apply to you. </p>
+      
+      <p><span>Term and Termination.</span> Subject to this Section, these Terms will remain in full force and effect while you use the Site. We may suspend or terminate your rights to use the Site at any time for any reason at our sole discretion, including for any use of the Site in violation of these Terms. Upon termination of your rights under these Terms, your Account and right to access and use the Site will terminate immediately. You understand that any termination of your Account may involve deletion of your User Content associated with your Account from our live databases. Company will not have any liability whatsoever to you for any termination of your rights under these Terms. Even after your rights under these Terms are terminated, the following provisions of these Terms will remain in effect: Sections 2 through 2.5, Section 3 and Sections 4 through 10. </p>
+      
+      
+      <h3>Copyright Policy.</h3>
+      
+      <p>Company respects the intellectual property of others and asks that users of our Site do the same. In connection with our Site, we have adopted and implemented a policy respecting copyright law that provides for the removal of any infringing materials and for the termination of users of our online Site who are repeated infringers of intellectual property rights, including copyrights. If you believe that one of our users is, through the use of our Site, unlawfully infringing the copyright(s) in a work, and wish to have the allegedly infringing material removed, the following information in the form of a written notification (pursuant to 17 U.S.C. § 512(c)) must be provided to our designated <br>Copyright Agent:
+      <ul>
+      <li>your physical or electronic signature; </li>
+      <li>identification of the copyrighted work(s) that you claim to have been infringed; </li>
+      <li>identification of the material on our services that you claim is infringing and that you request us to remove; </li>
+      <li>sufficient information to permit us to locate such material; </li>
+      <li>your address, telephone number, and e-mail address; </li>
+      <li>a statement that you have a good faith belief that use of the objectionable material is not authorized by the copyright owner, its agent, or under the law; </li>
+      <li>a statement that the information in the notification is accurate, and under penalty of perjury, that you are either the owner of the copyright that has allegedly been infringed or that you are authorized to act on behalf of the copyright owner. </li>
+      </ul>
+      Please note that, pursuant to 17 U.S.C. § 512(f), any misrepresentation of material fact in a written notification automatically subjects the complaining party to liability for any damages, costs and attorney’s fees incurred by us in connection with the written notification and allegation of copyright infringement. </p>
+      
+      
+      <h3>General</h3>
+      
+      <p>These Terms are subject to occasional revision, and if we make any substantial changes, we may notify you by sending you an e-mail to the last e-mail address you provided to us and/or by prominently posting notice of the changes on our Site. You are responsible for providing us with your most current e-mail address. In the event that the last e-mail address that you have provided us is not valid our dispatch of the e-mail containing such notice will nonetheless constitute effective notice of the changes described in the notice. Any changes to these Terms will be effective upon the earliest of thirty (30) calendar days following our dispatch of an e-mail notice to you or thirty (30) calendar days following our posting of notice of the changes on our Site. These changes will be effective immediately for new users of our Site. Continued use of our Site following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes. Dispute Resolution. Please read this Arbitration Agreement carefully. It is part of your contract with Company and affects your rights. It contains procedures for MANDATORY BINDING ARBITRATION AND A CLASS ACTION WAIVER. </p>
+      
+      <p><span>Applicability of Arbitration Agreement. </span> All claims and disputes in connection with the Terms or the use of any product or service provided by the Company that cannot be resolved informally or in small claims court shall be resolved by binding arbitration on an individual basis under the terms of this Arbitration Agreement. Unless otherwise agreed to, all arbitration proceedings shall be held in English. This Arbitration Agreement applies to you and the Company, and to any subsidiaries, affiliates, agents, employees, predecessors in interest, successors, and assigns, as well as all authorized or unauthorized users or beneficiaries of services or goods provided under the Terms. </p>
+      
+      <p><span>Notice Requirement and Informal Dispute Resolution.</span>  Before either party may seek arbitration, the party must first send to the other party a written Notice of Dispute describing the nature and basis of the claim or dispute, and the requested relief. A Notice to the Company should be sent to: Vesspay.com. After the Notice is received, you and the Company may attempt to resolve the claim or dispute informally. If you and the Company do not resolve the claim or dispute within thirty (30) days after the Notice is received, either party may begin an arbitration proceeding. The amount of any settlement offer made by any party may not be disclosed to the arbitrator until after the arbitrator has determined the amount of the award to which either party is entitled.<br>
+      <span>Arbitration Rules.</span> Arbitration shall be initiated through the American Arbitration Association, an established alternative dispute resolution provider that offers arbitration as set forth in this section. If AAA is not available to arbitrate, the parties shall agree to select an alternative ADR Provider. The rules of the ADR Provider shall govern all aspects of the arbitration except to the extent such rules are in conflict with the Terms. The AAA Consumer Arbitration Rules governing the arbitration are available online at adr.org or by calling the AAA at 1-800-778-7879. The arbitration shall be conducted by a single, neutral arbitrator. Any claims or disputes where the total amount of the award sought is less than Ten Thousand U.S. Dollars (US $10,000.00) may be resolved through binding non-appearance-based arbitration, at the option of the party seeking relief. For claims or disputes where the total amount of the award sought is Ten Thousand U.S. Dollars (US $10,000.00) or more, the right to a hearing will be determined by the Arbitration Rules. Any hearing will be held in a location within 100 miles of your residence, unless you reside outside of the United States, and unless the parties agree otherwise. If you reside outside of the U.S., the arbitrator shall give the parties reasonable notice of the date, time and place of any oral hearings. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. If the arbitrator grants you an award that is greater than the last settlement offer that the Company made to you prior to the initiation of arbitration, the Company will pay you the greater of the award or $2,500.00. Each party shall bear its own costs and disbursements arising out of the arbitration and shall pay an equal share of the fees and costs of the ADR Provider. </p>
+      
+      <p><span>Additional Rules for Non-Appearance Based Arbitration.</span>  If non-appearance based arbitration is elected, the arbitration shall be conducted by telephone, online and/or based solely on written submissions; the specific manner shall be chosen by the party initiating the arbitration. The arbitration shall not involve any personal appearance by the parties or witnesses unless otherwise agreed by the parties. </p>
+      
+      <p><span>Time Limits.</span>  If you or the Company pursues arbitration, the arbitration action must be initiated and/or demanded within the statute of limitations and within any deadline imposed under the AAA Rules for the pertinent claim. </p>
+      
+      <p><span>Authority of Arbitrator.</span> If arbitration is initiated, the arbitrator will decide the rights and liabilities of you and the Company, and the dispute will not be consolidated with any other matters or joined with any other cases or parties. The arbitrator shall have the authority to grant motions dispositive of all or part of any claim. The arbitrator shall have the authority to award monetary damages, and to grant any non-monetary remedy or relief available to an individual under applicable law, the AAA Rules, and the Terms. The arbitrator shall issue a written award and statement of decision describing the essential findings and conclusions on which the award is based. The arbitrator has the same authority to award relief on an individual basis that a judge in a court of law would have. The award of the arbitrator is final and binding upon you and the Company. </p>
+       
+      <p><span>Waiver of Jury Trial. </span> THE PARTIES HEREBY WAIVE THEIR CONSTITUTIONAL AND STATUTORY RIGHTS TO GO TO COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY, instead electing that all claims and disputes shall be resolved by arbitration under this Arbitration Agreement. Arbitration procedures are typically more limited, more efficient and less expensive than rules applicable in a court and are subject to very limited review by a court. In the event any litigation should arise between you and the Company in any state or federal court in a suit to vacate or enforce an arbitration award or otherwise, YOU AND THE COMPANY WAIVE ALL RIGHTS TO A JURY TRIAL, instead electing that the dispute be resolved by a judge. </p>
+      
+      <p><span>Waiver of Class or Consolidated Actions.</span> All claims and disputes within the scope of this arbitration agreement must be arbitrated or litigated on an individual basis and not on a class basis, and claims of more than one customer or user cannot be arbitrated or litigated jointly or consolidated with those of any other customer or user.<br>
+      Confidentiality. All aspects of the arbitration proceeding shall be strictly confidential. The parties agree to maintain confidentiality unless otherwise required by law. This paragraph shall not prevent a party from submitting to a court of law any information necessary to enforce this Agreement, to enforce an arbitration award, or to seek injunctive or equitable relief. </p>
+      
+      <p><span>Severability. </span>  If any part or parts of this Arbitration Agreement are found under the law to be invalid or unenforceable by a court of competent jurisdiction, then such specific part or parts shall be of no force and effect and shall be severed and the remainder of the Agreement shall continue in full force and effect. </p> 
+      
+      <p><span>Right to Waive.</span> Any or all of the rights and limitations set forth in this Arbitration Agreement may be waived by the party against whom the claim is asserted. Such waiver shall not waive or affect any other portion of this Arbitration Agreement.
+      Survival of Agreement. This Arbitration Agreement will survive the termination of your relationship with Company.</p>
+      
+      <p><span>Small Claims Court.</span>  Nonetheless the foregoing, either you or the Company may bring an individual action in small claims court.
+      Emergency Equitable Relief. Anyhow the foregoing, either party may seek emergency equitable relief before a state or federal court in order to maintain the status quo pending arbitration. A request for interim measures shall not be deemed a waiver of any other rights or obligations under this Arbitration Agreement. </p>
+      
+      <p><span>Claims Not Subject to Arbitration. </span>Notwithstanding the foregoing, claims of defamation, violation of the Computer Fraud and Abuse Act, and infringement or misappropriation of the other party’s patent, copyright, trademark or trade secrets shall not be subject to this Arbitration Agreement.
+      </p>
+      <p>In any circumstances where the foregoing Arbitration Agreement permits the parties to litigate in court, the parties hereby agree to submit to the personal jurisdiction of the courts located within Netherlands County, California, for such purposes.
+      </p>
+      <p>The Site may be subject to U.S. export control laws and may be subject to export or import regulations in other countries. You agree not to export, re-export, or transfer, directly or indirectly, any U.S. technical data acquired from Company, or any products utilizing such data, in violation of the United States export laws or regulations.
+      </p>
+      <p>Company is located at the address in Section 10.8. If you are a California resident, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Product of the California Department of Consumer Affairs by contacting them in writing at 400 R Street, Sacramento, CA 95814, or by telephone at (800) 952-5210.
+      </p>
+      <p><span>Electronic Communications.</span> The communications between you and Company use electronic means, whether you use the Site or send us emails, or whether Company posts notices on the Site or communicates with you via email. For contractual purposes, you (a) consent to receive communications from Company in an electronic form; and (b) agree that all terms and conditions, agreements, notices, disclosures, and other communications that Company provides to you electronically satisfy any legal obligation that such communications would satisfy if it were be in a hard copy writing.
+      </p>
+      <p><span>Entire Terms.</span>  These Terms constitute the entire agreement between you and us regarding the use of the Site. Our failure to exercise or enforce any right or provision of these Terms shall not operate as a waiver of such right or provision. The section titles in these Terms are for convenience only and have no legal or contractual effect. The word "including" means "including without limitation". If any provision of these Terms is held to be invalid or unenforceable, the other provisions of these Terms will be unimpaired and the invalid or unenforceable provision will be deemed modified so that it is valid and enforceable to the maximum extent permitted by law. Your relationship to Company is that of an independent contractor, and neither party is an agent or partner of the other. These Terms, and your rights and obligations herein, may not be assigned, subcontracted, delegated, or otherwise transferred by you without Company’s prior written consent, and any attempted assignment, subcontract, delegation, or transfer in violation of the foregoing will be null and void. Company may freely assign these Terms. The terms and conditions set forth in these Terms shall be binding upon assignees. </p>
+      
+      <p><span>Your Privacy.</span> Please read our Privacy Policy. </p>
+      
+      
+      <p><span>Copyright/Trademark Information. Copyright ©.</span> All rights reserved. All trademarks, logos and service marks displayed on the Site are our property or the property of other third-parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.
+      </p>
+       
+      <p>Contact Information</p>
+      
+      <p>Address: <a href = 'vesspay.com'>Vesspay.com</a></p>
+      
+      
+     </div>
+        </div>
     </div>
-
-
-    <script src="./../assets/js/main.min.js"></script>
+</div>
+<div class="privacyPolice modal">
+    <div class="content">
+        <div class="top">
+            <div class="close"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_b_1278_6894)">
+                        <rect width="40" height="40" rx="20" fill="#F4F7FF" />
+                        <path d="M15.2737 24.4777L24.3808 15.1768" stroke="#2F80ED" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.1766 15.2737L24.4775 24.3808" stroke="#2F80ED" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_b_1278_6894" x="-12" y="-12" width="64" height="64"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feGaussianBlur in="BackgroundImage" stdDeviation="6" />
+                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1278_6894" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1278_6894"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="wrapper-text">
+            <div class="text"><p>At VessPay, accessible from VessPay.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by VessPay and how we use it.
+    If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+    This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in VessPay. This policy is not applicable to any information collected offline or via channels other than this website. Consent
+    By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+    
+    
+    <h3>Information we collect</h3>
+    
+    <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
+    If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+    When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number. </p>
+    
+    
+    <h3>How we use your information</h3>
+    
+    <p>We use the information we collect in various ways, including to:</p>
+    <ul>
+    <li>Provide, operate, and maintain our website</li>
+    <li>Improve, personalize, and expand our website</li>
+    <li>Understand and analyze how you use our website</li>
+    <li>Develop new products, services, features, and functionality</li>
+    <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+    <li>Send you emails</li>
+    <li>Find and prevent fraud</li>
+    </ul>
+    
+    <h3>Log Files</h3>
+    
+    <p>VessPay follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+    
+    
+    <h3>Cookies and Web Beacons</h3>
+    
+    <p>Like any other website, VessPay uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+    
+    
+    <h3>Advertising Partners Privacy Policies</h3>
+    
+    <p>You may consult this list to find the Privacy Policy for each of the advertising partners of VessPay.
+    Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on VessPay, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.<br>
+    Note that VessPay has no access to or control over these cookies that are used by third-party advertisers.</p>
+    
+    
+    <h3>Third Party Privacy Policies</h3>
+    
+    <p>VessPay's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+    You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+    
+    
+    <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
+    
+    <p>Under the CCPA, among other rights, California consumers have the right to:
+    Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
+    Request that a business delete any personal data about the consumer that a business has collected.
+    Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+    If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+    
+    
+    <h3>GDPR Data Protection Rights</h3>
+    
+    <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:<br>
+    The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.<br>
+    The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.<br>
+    The right to erasure – You have the right to request that we erase your personal data, under certain conditions.
+    The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.
+    The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.<br>
+    The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+    If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+    
+    
+    <h3>Children's Information</h3>
+    
+    <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+    VessPay does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+    
+    </div>
+        </div>
+    </div>
+</div>
+ 
+  
+<script src="./../assets/js/main.min.js"></script> 
 </body>
 
 </html>
