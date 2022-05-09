@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const modals = document.querySelectorAll('.modal');
     if (modals.length) {
-        console.log(modals);
+
         modals.forEach(item => {
             const close = item.querySelector('.close')
             document.addEventListener('keydown', (e) => {
