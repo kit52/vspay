@@ -60,14 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
         });
-        console.log(window.innerWidth)
         // const sliderPagination = document.querySelector('.steps-section .swiper-pagination')
         // if (swiper.isLocked) {
         //     sliderPagination.classList.add('hide')
         // } else {
         //     sliderPagination.classList.remove('hide')
         // }
-        console.log(swiper);
     }
     if (document.querySelector('.dropdown')) {
         const dropdown = document.querySelector('.dropdown');
@@ -82,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const tilesControl = wrapperControl.querySelector('.tiles');
         wrapperControl.addEventListener('click', (e) => {
             if (e.target.closest('.rows')) {
-                console.log("rows");
                 tilesControl.classList.remove('selected')
                 rowsControl.classList.add('selected')
                 wrapperContent.classList.remove('tile')
@@ -103,14 +100,64 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const switchLink = document.querySelectorAll('.switch');
     if (switchLink) {
-        console.log("fdsafas");
+
         switchLink.forEach(item => {
             item.addEventListener('click', () => {
-                console.log('click');
+
                 const url = item.getAttribute('data-href');
                 setTimeout(() => {
                     location.href = url
                 }, 700)
+            })
+        })
+    }
+    function closeModal(modal) {
+        const body = document.querySelector('body')
+        modal.classList.remove('open');
+        body.classList.remove('lock');
+    }
+    function openModal(modal) {
+        const body = document.querySelector('body')
+        modal.classList.add('open');
+        body.classList.add('lock');
+    }
+    const modalTriggers = document.querySelectorAll('.modal-trigger');
+    if (modalTriggers.length) {
+        const modalTermOfUse = document.querySelector('.termOfUse');
+        const privacyPolice = document.querySelector('.privacyPolice');
+        modalTriggers.forEach(item => {
+            item.addEventListener('click', () => {
+                const modalAddress = item.getAttribute('data-href');
+                if (modalAddress == 'modal-term') {
+
+                    openModal(modalTermOfUse)
+
+                } else if (modalAddress == 'modal-privacy') {
+                    openModal(privacyPolice)
+
+                }
+
+            })
+        })
+    }
+
+    const modals = document.querySelectorAll('.modal');
+    if (modals.length) {
+        console.log(modals);
+        modals.forEach(item => {
+            const close = item.querySelector('.close')
+            document.addEventListener('keydown', (e) => {
+                if (e.code === "Escape" && item.classList.contains('open')) {
+                    closeModal(item)
+                }
+            })
+            close.addEventListener("click", () => {
+                closeModal(item)
+            })
+            item.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal')) {
+                    closeModal(item)
+                }
             })
         })
     }
