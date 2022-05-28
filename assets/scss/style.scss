@@ -71,6 +71,10 @@ h3 {
     }
 }
 
+.modal-trigger {
+    cursor: pointer;
+}
+
 .container {
     margin-left: 15px;
     margin-right: 15px;
@@ -104,12 +108,4 @@ h3 {
     @media (min-width: 992px) {
         margin-bottom: 120px;
     }
-}
-
-.modal-trigger {
-    cursor: pointer;
-}
-
-.lock {
-    overflow-y: hidden;
 }

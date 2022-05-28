@@ -60,12 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
         });
+
         // const sliderPagination = document.querySelector('.steps-section .swiper-pagination')
         // if (swiper.isLocked) {
         //     sliderPagination.classList.add('hide')
         // } else {
         //     sliderPagination.classList.remove('hide')
         // }
+
     }
     if (document.querySelector('.dropdown')) {
         const dropdown = document.querySelector('.dropdown');
@@ -80,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const tilesControl = wrapperControl.querySelector('.tiles');
         wrapperControl.addEventListener('click', (e) => {
             if (e.target.closest('.rows')) {
+
                 tilesControl.classList.remove('selected')
                 rowsControl.classList.add('selected')
                 wrapperContent.classList.remove('tile')
